@@ -1,16 +1,47 @@
-# React + Vite
+# 🇧🇴 Web Oficial - Comunidad Bahá'í de Bolivia (CBB)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Currently, two official plugins are available:
+Este proyecto representa la plataforma digital oficial de la **Comunidad Bahá’í de Bolivia**. Diseñada bajo los principios de amor, humildad y servicio, busca ser un puente de conexión espiritual y material para todo el pueblo boliviano.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎨 Identidad de Marca y Diseño
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El desarrollo visual se rige estrictamente por el **Manual de Marca de la CBB**, aplicando una psicología del color orientada a la naturaleza y la estabilidad:
 
-## Expanding the ESLint configuration
+* **Verde Principal (`#008b76`):** Simboliza la vida, la salud y la esperanza.
+* **Verde Llano (`#16C64F`):** Vitalidad y crecimiento orgánico.
+* **Verde Limón (`#CCD845`):** Energía, frescura y optimismo.
+* **Ocre Tierra (`#CB7E10`):** Calidez y el vínculo sagrado con la tierra boliviana.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tipografía
+- **Satoshi:** Voz moderna, limpia y directa para logotipos y encabezados.
+- **Crimson:** Elegancia y solemnidad para textos editoriales y mensajes profundos.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend:** React 18 + Vite.
+- **Routing:** `react-router` (Navegación fluida entre páginas).
+- **UI Framework:** React-Bootstrap (Sistema de rejilla y componentes accesibles).
+- **Estilos:** CSS Modules (Para evitar colisiones de estilos y asegurar mantenibilidad).
+- **Arquitectura:** Mobile-First con diseño responsivo adaptado a dispositivos rurales y urbanos.
+
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+src/
+├── assets/
+│   ├── images/          # Recursos visuales y fotografías
+│   └── styles/
+│       └── global.css   # Definición de variables CSS y reset
+├── components/          # Header, Footer y componentes reutilizables
+├── pages/               # Vistas: Identity, Beliefs, Actions, etc.
+├── util/                # Funciones auxiliares y constantes
+└── main.jsx             # Configuración de rutas y punto de entrada
