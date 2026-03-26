@@ -1,19 +1,52 @@
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router';
+import styles from './Footer.module.css';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer style={{ backgroundColor: 'black', color: '#fff', padding: '20px 0', marginTop: '0px' }}>
-            <Container>
-                <Row className="align-items-center">
-                    <Col md={6} className="text-center text-md-start mb-2 mb-md-0">
-                        <span style={{ color: '#D4AC0D', fontWeight: 'bold' }}>POKEMON</span> &copy; {new Date().getFullYear()} - Todos los derechos reservados.
-                    </Col>
-                    <Col md={6} className="text-center text-md-end">
-                        <a href="https://www.binance.com/es-AR/terms"  rel="noopener noreferrer" className="text-light text-decoration-none me-3">Términos</a>
-                        <a href="https://www.binance.com/es-AR/privacy"  rel="noopener noreferrer" className="text-light text-decoration-none">Privacidad</a>
-                    </Col>
-                </Row>
-            </Container>
+        <footer className={styles.footer}>
+        <Container>
+            <Row className="gy-4">
+            {/* Columna 1: Propósito */}
+            <Col md={5}>
+                <h5 className={styles.footerTitle}>Comunidad Bahá’í de Bolivia</h5>
+                <p className={styles.footerText}>
+                Trabajamos con amor, humildad y esperanza por el bienestar espiritual 
+                y material de todo el pueblo boliviano, desde lo sencillo y cotidiano.
+                </p>
+            </Col>
+
+            {/* Columna 2: Enlaces Rápidos */}
+            <Col md={3} className="ms-auto">
+                <h5 className={styles.footerTitle}>Explorar</h5>
+                <NavLink to="/identidad" className={styles.footerLink}>Nuestra Identidad</NavLink>
+                <NavLink to="/creencias" className={styles.footerLink}>Creencias</NavLink>
+                <NavLink to="/acciones" className={styles.footerLink}>Acciones de Servicio</NavLink>
+                <NavLink to="/contacto" className={styles.footerLink}>Contacto</NavLink>
+            </Col>
+
+            {/* Columna 3: Legal */}
+            <Col md={3}>
+                <h5 className={styles.footerTitle}>Institucional</h5>
+                <NavLink to="/condiciones" className={styles.legalLink}>
+                Términos y Condiciones
+                </NavLink>
+            </Col>
+            </Row>
+
+            {/* Bottom Bar */}
+            <Row className={styles.copyrightSection}>
+            <Col>
+                <p className="mb-0 small text-muted">
+                © {currentYear} Comunidad Bahá’í de Bolivia. 
+                <br className="d-md-none" /> Construyendo juntos una Bolivia más unida.
+                </p>
+            </Col>
+            </Row>
+        </Container>
         </footer>
     );
 };

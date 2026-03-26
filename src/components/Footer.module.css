@@ -1,0 +1,62 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 3rem 0 1.5rem 0;
+  border-top: 4px solid var(--cbb-ocre-tierra); /* Conexión con la tierra */
+  margin-top: auto;
+}
+
+.footerTitle {
+  font-family: var(--font-primary);
+  color: var(--cbb-verde-principal);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.footerText {
+  font-family: var(--font-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footerLink {
+  display: block;
+  font-family: var(--font-primary);
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.footerLink:hover {
+  color: var(--cbb-verde-principal);
+}
+
+.copyrightSection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.legalLink {
+  font-family: var(--font-primary);
+  color: var(--cbb-ocre-tierra);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.legalLink:hover {
+  text-decoration: underline;
+}
+
+/* Mobile First: Alineación al centro en móviles */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}

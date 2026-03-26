@@ -1,0 +1,56 @@
+.navbarCustom {
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--cbb-verde-limon); /* Toque sutil de frescura */
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.brandLogo {
+  font-family: var(--font-primary);
+  color: var(--cbb-verde-principal);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navLink {
+  font-family: var(--font-primary);
+  color: #444;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--cbb-verde-principal) !important;
+}
+
+/* Animación de línea inferior en hover */
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--cbb-verde-llano);
+  transition: width 0.3s;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.toggleIcon {
+  border: none;
+}
+
+/* Responsive: Mobile First */
+@media (max-width: 991px) {
+  .navLink {
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
