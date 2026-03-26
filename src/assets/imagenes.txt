@@ -1,0 +1,15 @@
+"Actúa como un Desarrollador Frontend Senior experto en React y Arquitectura de Software. Necesito crear un componente [NOMBRE DEL COMPONENTE, ej: Hero Section] para una landing page profesional de varias páginas.
+
+Requisitos técnicos:
+
+Usa React-Bootstrap exclusivamente para la estructura de rejilla (Container, Row, Col).
+
+No uses estilos en línea style={{}}.
+
+Utiliza CSS Modules para estilos personalizados y animaciones.
+
+El diseño debe ser totalmente responsive siguiendo la filosofía 'Mobile First'.
+
+Usa variables CSS para los colores principales (Rojo, Amarillo, Verde de Bolivia).
+
+El código debe ser limpio, con nombres de clases semánticos y fácil de mantener."
