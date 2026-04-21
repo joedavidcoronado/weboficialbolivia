@@ -1,56 +1,60 @@
 .navbarCustom {
-  background-color: #ffffff;
-  border-bottom: 2px solid var(--cbb-verde-limon); /* Toque sutil de frescura */
-  padding: 0.8rem 1rem;
-  transition: all 0.3s ease-in-out;
+  /* Degradado: de verde sólido arriba a transparente abajo */
+  background: linear-gradient(
+    to bottom, 
+    rgba(var(--cbb-verde-principal-rgb), 1) 0%, 
+    rgba(var(--cbb-verde-principal-rgb), 0.8) 50%,
+    transparent 100%
+  );
+  backdrop-filter: blur(4px); /* Suaviza el fondo al hacer scroll */
+  padding: 1rem 0;
+  border: none;
+  transition: all 0.4s ease;
 }
 
-.brandLogo {
-  font-family: var(--font-primary);
-  color: var(--cbb-verde-principal);
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.logoImg {
+  height: 50px;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
 }
 
 .navLink {
   font-family: var(--font-primary);
-  color: #444;
+  color: #ffffff !important; /* Blanco para resaltar sobre el verde */
   font-weight: 500;
-  margin: 0 10px;
-  position: relative;
-  transition: color 0.2s;
+  margin: 0 15px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
 .navLink:hover {
-  color: var(--cbb-verde-principal) !important;
+  opacity: 1;
+  transform: translateY(-2px);
+  color: var(--cbb-verde-limon) !important; /* Cambio sutil al pasar el mouse */
 }
 
-/* Animación de línea inferior en hover */
-.navLink::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: var(--cbb-verde-llano);
-  transition: width 0.3s;
+/* Indicador de página activa (NavLink lo aplica automáticamente) */
+:global(.active).navLink {
+  font-weight: 700;
+  color: var(--cbb-verde-limon) !important;
 }
 
-.navLink:hover::after {
-  width: 100%;
-}
-
+/* Ajuste para el botón de menú en móviles */
 .toggleIcon {
   border: none;
+  filter: invert(1); /* Hace que el icono de hamburguesa sea blanco */
 }
 
-/* Responsive: Mobile First */
+.toggleIcon:focus {
+  box-shadow: none;
+}
+
 @media (max-width: 991px) {
-  .navLink {
-    padding: 1rem 0;
-    border-bottom: 1px solid #f0f0f0;
+  .navbarCustom {
+    background: var(--cbb-verde-principal); /* Sólido en móvil para legibilidad */
+    padding: 0.5rem 1rem;
   }
 }

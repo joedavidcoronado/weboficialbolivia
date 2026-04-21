@@ -1,62 +1,110 @@
 .footer {
-  background-color: #f8f9fa;
-  padding: 3rem 0 1.5rem 0;
-  border-top: 4px solid var(--cbb-ocre-tierra); /* Conexión con la tierra */
-  margin-top: auto;
+  /* Usamos el verde principal degradado hacia un tono más profundo */
+  background: linear-gradient(
+    180deg, 
+    var(--cbb-verde-principal) 0%, 
+    #002b25 100%
+  );
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-family: var(--font-primary);
 }
 
-.footerTitle {
-  font-family: var(--font-primary);
-  color: var(--cbb-verde-principal);
-  font-weight: 700;
-  margin-bottom: 1.2rem;
+.footerContent {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 3rem;
+}
+
+.logoImg {
+  width: 150px;
+  margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.logoImg:hover {
+  transform: translateY(-3px);
+}
+
+.footerCopy {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.footerHeading {
   font-size: 1.1rem;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.8rem;
+  color: var(--cbb-verde-limon); /* Color de acento para jerarquía */
 }
 
 .footerText {
   font-family: var(--font-secondary);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
 }
 
-.footerLink {
-  display: block;
-  font-family: var(--font-primary);
-  color: #444;
-  text-decoration: none;
+.footerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
   margin-bottom: 0.8rem;
-  transition: color 0.2s ease;
-  font-size: 0.95rem;
 }
 
-.footerLink:hover {
-  color: var(--cbb-verde-principal);
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
+.footerLinks a:hover {
+  color: white;
+  transform: translateX(5px); /* Efecto de desplazamiento al pasar el mouse */
+}
+
+/* Redes Sociales */
+.socialWrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.footerSocial {
+  background: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footerSocial:hover {
+  background: var(--cbb-verde-llano);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Sección final de créditos */
 .copyrightSection {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e0e0e0;
+  padding-top: 2rem;
   text-align: center;
 }
 
-.legalLink {
-  font-family: var(--font-primary);
-  color: var(--cbb-ocre-tierra);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.legalLink:hover {
-  text-decoration: underline;
-}
-
-/* Mobile First: Alineación al centro en móviles */
-@media (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
+.copyrightSection p {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.4);
 }

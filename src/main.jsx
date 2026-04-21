@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/global.css';
@@ -12,6 +14,8 @@ import ConditionsPage from './pages/ConditionsPage.jsx';
 import ContactsPage from './pages/ContactsPage.jsx';
 import IdentityPage from './pages/IdentityPage.jsx';
 import PresentPage from './pages/PresentPage.jsx';*/}
+
+AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

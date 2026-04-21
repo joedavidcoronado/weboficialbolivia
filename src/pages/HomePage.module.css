@@ -1,96 +1,625 @@
-/* Hero Section */
+/* ───── HERO SECTION ───── */
 .heroSection {
-  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
-  padding: 80px 0;
-  border-bottom: 1px solid var(--cbb-verde-limon);
-  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  background-image: url('/assets/heroSection4.png'); /* 👈 reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 139, 118, 0.82) 0%,
+    rgba(0, 139, 118, 0.55) 45%,
+    rgba(0, 139, 118, 0.05) 70%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 
 .heroTitle {
   font-family: var(--font-primary);
-  color: var(--cbb-verde-principal);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-}
-
-.heroSubtitle {
-  font-family: var(--font-secondary);
-  font-size: 1.4rem;
-  color: #555;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-
-.mainButton {
-  background-color: var(--cbb-verde-principal);
-  border: none;
-  font-family: var(--font-primary);
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 50px;
-  transition: transform 0.3s ease, background-color 0.3s;
-}
-
-.mainButton:hover {
-  background-color: var(--cbb-verde-llano);
-  transform: translateY(-3px);
-}
-
-/* Feature Cards (Propósito) */
-.purposeSection {
-  padding: 100px 0;
-  background-color: #fff;
-}
-
-.purposeCard {
-  border: none;
-  border-top: 5px solid var(--cbb-ocre-tierra);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  padding: 2rem;
-  height: 100%;
-  transition: all 0.3s ease;
-}
-
-.purposeCard:hover {
-  transform: translateY(-10px);
-}
-
-.iconCircle {
-  width: 60px;
-  height: 60px;
-  background-color: var(--cbb-verde-limon);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-.sectionLabel {
-  color: var(--cbb-ocre-tierra);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 700;
-  font-size: 0.9rem;
-  display: block;
-  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
 }
 
-/* Quote Section */
+.heroText {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 380px;
+}
+
+.heroBtn {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #28DC8F;
+  border: 2px solid #28DC8F;
+  border-radius: 4px;
+  padding: 0.65rem 1.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.heroBtn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ───── QUOTE SECTION ───── */
 .quoteSection {
-  background-color: var(--cbb-verde-principal);
-  color: #fff;
-  padding: 80px 0;
+  position: relative;
+  background-color: #eef7f4;
+  padding: 5rem 1rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .quoteText {
   font-family: var(--font-secondary);
-  font-size: 2rem;
-  max-width: 800px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  color: #1a4a3f;
+  line-height: 1.45;
+  margin-bottom: 2rem;
+  border: none;
+  padding: 0;
+}
+
+.quoteBody {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  color: #2d2d2d;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.quoteBtn {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #28DC8F;
+  border: 2px solid #28DC8F;
+  border-radius: 4px;
+  padding: 0.7rem 2rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.quoteBtn:hover {
+  background-color: transparent;
+  color: var(--cbb-verde-principal);
+}
+
+/* Flores decorativas */
+.florDeco {
+  position: absolute;
+  width: 160px;
+  opacity: 0.35;
+  pointer-events: none;
+  filter: grayscale(30%);
+}
+
+.florTopRight {
+  top: -10px;
+  right: -10px;
+  transform: rotate(10deg);
+}
+
+.florBottomLeft {
+  bottom: -10px;
+  left: -10px;
+  transform: rotate(190deg);
+}
+
+/* ───── FE BAHÁI SECTION ───── */
+.feSection {
+  background-color: #ffffff;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+
+/* === Columna imágenes === */
+.feImagesCol {
+  display: flex;
+  justify-content: center;
+}
+
+.feImagesWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+  height: 420px;
+}
+
+.feImgCard {
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.feImgCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Foto izquierda — más baja */
+.feImgLeft {
+  width: 140px;
+  height: 300px;
+  align-self: flex-end;
+}
+
+/* Foto centro — la más alta y elevada */
+.feImgCenter {
+  width: 140px;
+  height: 380px;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* Foto derecha — altura media */
+.feImgRight {
+  width: 140px;
+  height: 260px;
+  align-self: flex-end;
+}
+
+/* === Columna texto === */
+.feTextCol {
+  padding-left: 2rem;
+}
+
+.feLabel {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--cbb-verde-principal);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.feTitle {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.feBody {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  color: #3a3a3a;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+}
+
+.feLink {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.feLink:hover {
+  color: var(--cbb-verde-principal);
+}
+
+.feLinkArrow {
+  transition: transform 0.2s ease;
+}
+
+.feLink:hover .feLinkArrow {
+  transform: translateX(4px);
+}
+
+/* ───── VIDA BAHÁI SECTION ───── */
+.vidaSection {
+  width: 100%;
+  background-color: #1a3a30;
+}
+
+/* === Fila superior === */
+.vidaTop {
+  display: flex;
+  flex-direction: row;
+  min-height: 420px;
+}
+
+.vidaTopImg {
+  flex: 1;
+  overflow: hidden;
+}
+
+.vidaTopImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vidaTopText {
+  flex: 1;
+  background-color: var(--cbb-verde-principal);
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vidaLabel {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.85rem;
+  opacity: 0.85;
+}
+
+.vidaTitle {
+  font-family: var(--font-primary);
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+  font-weight: 700;
+  color: var(--cbb-verde-llano);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.vidaBody {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.6vw, 1.05rem);
+  color: #ffffff;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  max-width: 460px;
+  opacity: 0.92;
+}
+
+.vidaLink {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: opacity 0.2s ease;
+}
+
+.vidaLink:hover {
+  opacity: 0.75;
+  color: #ffffff;
+}
+
+.vidaLinkArrow {
+  transition: transform 0.2s ease;
+}
+
+.vidaLink:hover .vidaLinkArrow {
+  transform: translateX(5px);
+}
+
+/* === Fila inferior: galería === */
+.vidaGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 240px;
+}
+
+.vidaGalleryItem {
+  overflow: hidden;
+}
+
+.vidaGalleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.vidaGalleryItem:hover img {
+  transform: scale(1.05);
+}
+
+/* ───── VIDA COMUNITARIA SECTION ───── */
+.comunidadSection {
+  background-color: #a8dfca;
+  padding: 5rem 6.8rem;
+  overflow: hidden;
+}
+
+.comunidadInner {
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* === Texto === */
+.comunidadTextCol {
+  padding-right: 2rem;
+}
+
+.comunidadLabel {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #1a4a3f;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.comunidadTitle {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #1a3a30;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.comunidadBody {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  color: #1a3a30;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 440px;
+}
+
+.comunidadBtn {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #28DC8F;
+  border: 2px solid #28DC8F;
+  border-radius: 4px;
+  padding: 0.75rem 1.75rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.comunidadBtn:hover {
+  background-color: transparent;
+  color: var(--cbb-verde-principal);
+  border-color: var(--cbb-verde-principal);
+}
+
+/* === Composición visual === */
+.comunidadVisualCol {
+  display: flex;
+  justify-content: center;
+}
+
+.comunidadComposicion {
+  position: relative;
+  width: 480px;
+  height: 420px;
+}
+
+/* Foto central */
+.comunidadCard {
+  position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.comunidadCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardMain {
+  width: 220px;
+  height: 260px;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Avatares — posicionados manualmente */
+.avatar1 { width: 90px; height: 90px; top: 0px;   left: 120px; }
+.avatar2 { width: 90px; height: 90px; top: 60px;  left: 10px;  }
+.avatar3 { width: 90px; height: 90px; top: 30px;  right: 10px; }
+.avatar4 { width: 90px; height: 90px; bottom: 60px; right: 0px; }
+.avatar5 { width: 90px; height: 90px; bottom: 30px; left: 100px;}
+.avatar6 { width: 90px; height: 90px; bottom: 0px;  left: 230px;}
+
+/* Patrón de puntos */
+.dotGrid {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #1a4a3f;
+  display: block;
+}
+/* ───── MAPA SECTION ───── */
+.mapaSection {
+  background-color: #E7FAEE;
+  padding: 5rem 1rem;
+  position: relative;
+}
+
+/* === Texto === */
+.mapaTextCol {
+  padding-right: 2rem;
+}
+
+.mapaLabel {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--cbb-verde-principal);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.mapaTitle {
+  font-family: var(--font-primary);
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #1a3a30;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.mapaBody {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.6vw, 1.05rem);
+  color: #3a3a3a;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 420px;
+}
+
+.mapaBtn {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #28DC8F;
+  border: 2px solid #28DC8F;
+  border-radius: 4px;
+  padding: 0.75rem 1.75rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mapaBtn:hover {
+  background-color: var(--cbb-verde-principal);
+  color: #ffffff;
+}
+
+/* === Mapa === */
+.mapaVisualCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapaSvg {
+  width: 100%;
+  height: auto;
+}
+
+.quoteSection2 {
+    /* Degradado similar al de la imagen */
+    background: linear-gradient(135deg, #008f7a 0%, #00a896 50%, #83c5be 100%);
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.quoteWrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.bAdornoWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%); /* El 50% en Y la baja justo a la mitad */
+  bottom: 0; /* Se alinea al borde inferior de mapaSection */
+  z-index: 10; /* Para que quede por encima de ambas secciones */
+  pointer-events: none; /* Opcional: para que no interfiera con clics */
+}
+
+.bAdorno {
+  width: 150px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  display: block;
+}
+
+.quote2Text {
+    font-family: 'Georgia', serif; /* O una fuente serif elegante similar */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-style: normal;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quoteAuthor {
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Fuente sans-serif para el autor */
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Decoración de flores a la derecha */
+.quoteDecorationSide {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 350px;
+    background-image: url('/assets/flores-decoracion.png'); /* Sube aquí tu imagen con transparencia */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    pointer-events: none;
 }
