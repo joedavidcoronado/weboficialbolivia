@@ -20,13 +20,13 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link as={NavLink} to="/identidad" className={styles.navLink}>
-                            Identidad
+                            Quienes somos
                         </Nav.Link>
                         <Nav.Link as={NavLink} to="/creencias" className={styles.navLink}>
-                            Creencias
+                            Que creemos
                         </Nav.Link>
                         <Nav.Link as={NavLink} to="/comunidad" className={styles.navLink}>
-                            Comunidad
+                            Que hacemos
                         </Nav.Link>
                         <Nav.Link as={NavLink} to="/recursos" className={styles.navLink}>
                             Recursos

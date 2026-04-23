@@ -10,22 +10,15 @@ const HomePage = () => {
         <Header />
         
         <main>
-            {/* ─── HERO SECTION ─── */}
+            {/* ─── HERO/MAIN SECTION ─── */}
             <section className={styles.heroSection}>
                 <div className={styles.heroOverlay} />
-
-                {/* Bokeh */}
-                <div className={styles.bokehContainer}>
-                    {Array.from({ length: 8 }).map((_, i) => (
-                        <span key={i} className={styles.bokeh} />
-                    ))}
-                </div>
-
                 <Container className={styles.heroContent}>
                     <Row>
                         <Col md={5} sm={8} xs={12}>
                             <h1 className={styles.heroTitle} data-aos="fade-right">
-                                La tierra es un solo país
+                                La tierra es un 
+                                solo país
                             </h1>
                             <p className={styles.heroText} data-aos="fade-right" data-aos-delay="150">
                                 Creemos que es hora de que la humanidad se una como una sola familia, 
@@ -39,7 +32,7 @@ const HomePage = () => {
                 </Container>
             </section>
 
-            {/* ─── QUOTE SECTION ─── */}
+            {/* ─── QUOTE/CITA SECTION ─── */}
             <section className={styles.quoteSection}>
                 <img src="/assets/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florTopRight}`} aria-hidden="true" />
                 <img src="/assets/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florBottomLeft}`} aria-hidden="true" />
@@ -72,7 +65,7 @@ const HomePage = () => {
                 </Container>
             </section>
 
-            {/* ─── FE BAHÁI SECTION ─── */}
+            {/* ─── EN QUE CREEMOS BAHÁI SECTION ─── */}
             <section className={styles.feSection}>
                 <Container>
                     <Row className="align-items-center">
@@ -110,7 +103,7 @@ const HomePage = () => {
                 </Container>
             </section>
 
-            {/* ─── VIDA BAHÁI SECTION ─── */}
+            {/* ─── QUIENES SOMOS LOS BAHÁI SECTION ─── */}
             <section className={styles.vidaSection}>
                 <div className={styles.vidaTop}>
                     <div className={styles.vidaTopImg} data-aos="fade-right" data-aos-duration="1000">
@@ -147,7 +140,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* ─── VIDA COMUNITARIA SECTION ─── */}
+            {/* ─── QUE HACEMOS SECTION ─── */}
             <section className={styles.comunidadSection}>
                 <Container fluid className={styles.comunidadInner}>
                     <Row className="align-items-center">
@@ -198,7 +191,7 @@ const HomePage = () => {
                 <Container>
                     <Row className="align-items-center justify-content-center">
 
-                        <Col md={5} xs={12} className={styles.mapaTextCol} data-aos="fade-right">
+                        <Col md={6} xs={12} className={styles.mapaTextCol} data-aos="fade-right">
                             <span className={styles.mapaLabel}>ESTÁS INVITADO A PARTICIPAR</span>
                             <h2 className={styles.mapaTitle}>
                                 Una comunidad global construida sobre conexiones locales
@@ -215,7 +208,7 @@ const HomePage = () => {
                         </Col>
 
                         <Col 
-                            md={6} xs={12} 
+                            md={5} xs={12} 
                             className={`d-flex justify-content-center ${styles.mapaVisualCol}`}
                             data-aos="fade-left"
                             data-aos-delay="200"
@@ -235,7 +228,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* ─── QUOTE 2 SECTION ─── */}
+            {/* ─── QUOTE/CITA 2 SECTION ─── */}
             <section className={styles.quoteSection2}>
                 <Container>
                     <Row className="justify-content-center">

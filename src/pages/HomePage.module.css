@@ -2,7 +2,7 @@
 .heroSection {
   position: relative;
   min-height: 100vh;
-  background-image: url('/assets/heroSection4.png'); /* 👈 reemplaza con tu imagen */
+  background-image: url('/assets/heroSection6.png'); /* 👈 reemplaza con tu imagen */
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 
 .heroTitle {
   font-family: var(--font-primary);
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-size: clamp(4.2rem, 8vw, 4.4rem);
   font-weight: 700;
   color: #ffffff;
   line-height: 1.15;
@@ -40,31 +40,38 @@
 }
 
 .heroText {
-  font-family: var(--font-secondary);
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-family: var(--font-primary);
   color: #ffffff;
-  line-height: 1.6;
   margin-bottom: 2rem;
   max-width: 380px;
+  font-weight: 40;
 }
 
 .heroBtn {
   font-family: var(--font-primary);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #ffffff;
-  background-color: #28DC8F;
-  border: 2px solid #28DC8F;
-  border-radius: 4px;
-  padding: 0.65rem 1.5rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .heroBtn:hover {
-  background-color: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: #19cc7e !important;
+  color: #003E48 !important;
+  transform: translateY(-2px);
+}
+
+.heroBtn:active {
+  transform: translateY(3px) !important;
 }
 
 /* ───── QUOTE SECTION ───── */
@@ -79,7 +86,6 @@
 .quoteText {
   font-family: var(--font-secondary);
   font-size: clamp(1.5rem, 3vw, 2rem);
-  font-style: italic;
   color: #1a4a3f;
   line-height: 1.45;
   margin-bottom: 2rem;
@@ -88,7 +94,7 @@
 }
 
 .quoteBody {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: clamp(1rem, 1.8vw, 1.1rem);
   color: #2d2d2d;
   line-height: 1.75;
@@ -99,19 +105,23 @@
   font-family: var(--font-primary);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #ffffff;
-  background-color: #28DC8F;
-  border: 2px solid #28DC8F;
-  border-radius: 4px;
-  padding: 0.7rem 2rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .quoteBtn:hover {
-  background-color: transparent;
-  color: var(--cbb-verde-principal);
+  background-color: #19cc7e !important;
+  color: #003E48 !important;
 }
+
 
 /* Flores decorativas */
 .florDeco {
@@ -210,13 +220,13 @@
   font-family: var(--font-primary);
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 700;
-  color: #1a1a1a;
+  color: #003E48;
   line-height: 1.2;
   margin-bottom: 1.25rem;
 }
 
 .feBody {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: clamp(1rem, 1.8vw, 1.1rem);
   color: #3a3a3a;
   line-height: 1.75;
@@ -228,7 +238,7 @@
   font-family: var(--font-primary);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #003E48;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -251,7 +261,8 @@
 /* ───── VIDA BAHÁI SECTION ───── */
 .vidaSection {
   width: 100%;
-  background-color: #1a3a30;
+  background-color: #142F29;
+  
 }
 
 /* === Fila superior === */
@@ -275,7 +286,7 @@
 
 .vidaTopText {
   flex: 1;
-  background-color: var(--cbb-verde-principal);
+  background-color: #142F29;
   padding: 3.5rem 3rem;
   display: flex;
   flex-direction: column;
@@ -298,13 +309,12 @@
   font-family: var(--font-primary);
   font-size: clamp(1.9rem, 3.5vw, 2.7rem);
   font-weight: 700;
-  color: var(--cbb-verde-llano);
+  color: #28DC8F;
   line-height: 1.2;
   margin-bottom: 1.25rem;
 }
 
 .vidaBody {
-  font-family: var(--font-secondary);
   font-size: clamp(1rem, 1.6vw, 1.05rem);
   color: #ffffff;
   line-height: 1.75;
@@ -317,7 +327,7 @@
   font-family: var(--font-primary);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #28DC8F;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -347,18 +357,56 @@
 
 .vidaGalleryItem {
   overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.vidaGalleryItem.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay en cascada */
+.vidaGalleryItem:nth-child(1) { transition-delay: 0s; }
+.vidaGalleryItem:nth-child(2) { transition-delay: 0.12s; }
+.vidaGalleryItem:nth-child(3) { transition-delay: 0.24s; }
+.vidaGalleryItem:nth-child(4) { transition-delay: 0.36s; }
 
 .vidaGalleryItem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+}
+
+/* Overlay hover */
+.vidaGalleryItem::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 139, 118, 0.72);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.vidaGalleryItem:hover::after {
+  opacity: 1;
 }
 
 .vidaGalleryItem:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* ───── VIDA COMUNITARIA SECTION ───── */
@@ -383,7 +431,7 @@
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #1a4a3f;
+  color: #008B76;
   text-transform: uppercase;
   display: block;
   margin-bottom: 0.85rem;
@@ -399,7 +447,7 @@
 }
 
 .comunidadBody {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: clamp(1rem, 1.8vw, 1.1rem);
   color: #1a3a30;
   line-height: 1.75;
@@ -409,21 +457,23 @@
 
 .comunidadBtn {
   font-family: var(--font-primary);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #ffffff;
-  background-color: #28DC8F;
-  border: 2px solid #28DC8F;
-  border-radius: 4px;
-  padding: 0.75rem 1.75rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .comunidadBtn:hover {
-  background-color: transparent;
-  color: var(--cbb-verde-principal);
-  border-color: var(--cbb-verde-principal);
+  background-color: #19cc7e !important;
+  color: #003E48 !important;
 }
 
 /* === Composición visual === */
@@ -489,6 +539,14 @@
   background-color: #1a4a3f;
   display: block;
 }
+
+
+
+
+
+
+
+
 /* ───── MAPA SECTION ───── */
 .mapaSection {
   background-color: #E7FAEE;
@@ -522,8 +580,8 @@
 }
 
 .mapaBody {
-  font-family: var(--font-secondary);
-  font-size: clamp(1rem, 1.6vw, 1.05rem);
+  font-family: var(--font-primary);
+  font-size: clamp(1rem, 1.3vw, 1.05rem);
   color: #3a3a3a;
   line-height: 1.75;
   margin-bottom: 2rem;
@@ -532,20 +590,23 @@
 
 .mapaBtn {
   font-family: var(--font-primary);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #ffffff;
-  background-color: #28DC8F;
-  border: 2px solid #28DC8F;
-  border-radius: 4px;
-  padding: 0.75rem 1.75rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .mapaBtn:hover {
-  background-color: var(--cbb-verde-principal);
-  color: #ffffff;
+  background-color: #19cc7e !important;
+  color: #003E48 !important;
 }
 
 /* === Mapa === */
@@ -590,10 +651,10 @@
 }
 
 .quote2Text {
-    font-family: 'Georgia', serif; /* O una fuente serif elegante similar */
+    font-family: var(--font-secondary); /* O una fuente serif elegante similar */
     font-size: 1.2rem;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 2rem;
     font-style: normal;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -601,11 +662,11 @@
 
 .quoteAuthor {
     display: block;
-    font-family: 'Montserrat', sans-serif; /* Fuente sans-serif para el autor */
+    font-family: var(--font-primary); /* Fuente sans-serif para el autor */
     letter-spacing: 0.2rem;
     font-size: 1.1rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     opacity: 0.9;
 }
 

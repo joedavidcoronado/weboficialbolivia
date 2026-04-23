@@ -28,14 +28,14 @@ const Footer = () => {
                         <h4 className={styles.footerHeading}>Contacto</h4>
                         <div className={styles.footerText}>
                             <strong>Sede Nacional:</strong><br />
-                            Calle No recuerdo 32, Obrajes<br />
-                            La Paz, Bolivia
+                            Av. del Libertador, Pasaje Libertad #1, Obrajes <br />
+                            Casilla 20010• La Paz, Bolivia
                         </div>
                         <div className={styles.footerText}>
-                            <a href="mailto:secretaria@bahai.bo" style={{color: 'inherit', textDecoration: 'none'}}>
-                                secretaria@bahai.bo
+                            <a href="mailto:secretariat@adminbo.org" style={{color: 'inherit', textDecoration: 'none'}}>
+                                <strong>secretariat@adminbo.org</strong>
                             </a><br />
-                            +591 (2) 2XXXXXX
+                            Tel: (591-2) 2785058 / Fax: (591-2) 2782387
                         </div>
                     </Col>
 
@@ -43,9 +43,9 @@ const Footer = () => {
                     <Col lg={4} md={6}>
                         <h4 className={styles.footerHeading}>Explorar</h4>
                         <ul className={styles.footerLinks}>
-                            <li><a href="/identidad">Nuestra Identidad</a></li>
-                            <li><a href="/creencias">Creencias Centrales</a></li>
-                            <li><a href="/comunidad">Vida Comunitaria</a></li>
+                            <li><a href="/identidad">Quienes somos</a></li>
+                            <li><a href="/creencias">Que creemos</a></li>
+                            <li><a href="/comunidad">Que hacemos</a></li>
                             <li><a href="/recursos">Biblioteca de Recursos</a></li>
                         </ul>
                     </Col>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Row>
                     <Col>
                         <p className="mb-0">
-                            © 2026 COMUNIDAD BAHÁ'Í DE BOLIVIA • CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
+                            © 2026 ASAMBLEA ESPIRITUAL NACIONAL DE LOS BAHÁ'ÍS DE BOLIVIA • CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
                         </p>
                     </Col>
                 </Row>
