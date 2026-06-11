@@ -34,8 +34,8 @@ const HomePage = () => {
 
             {/* ─── QUOTE/CITA SECTION ─── */}
             <section className={styles.quoteSection}>
-                <img src="/assets/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florTopRight}`} aria-hidden="true" />
-                <img src="/assets/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florBottomLeft}`} aria-hidden="true" />
+                <img src="/assets/homeImages/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florTopRight}`} aria-hidden="true" />
+                <img src="/assets/homeImages/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florBottomLeft}`} aria-hidden="true" />
 
                 <Container>
                     <Row className="justify-content-center">
@@ -74,13 +74,13 @@ const HomePage = () => {
                         <Col md={6} className={styles.feImagesCol} data-aos="fade-right" data-aos-duration="900">
                             <div className={styles.feImagesWrapper}>
                                 <div className={`${styles.feImgCard} ${styles.feImgLeft}`}>
-                                    <img src="/assets/fe-1.jpg" alt="Comunidad bahá'í" />
+                                    <img src="/assets/homeImages/fe-1.jpg" alt="Comunidad bahá'í" />
                                 </div>
                                 <div className={`${styles.feImgCard} ${styles.feImgCenter}`}>
-                                    <img src="/assets/fe-2.jpg" alt="Templo bahá'í" />
+                                    <img src="/assets/homeImages/fe-2.jpg" alt="Templo bahá'í" />
                                 </div>
                                 <div className={`${styles.feImgCard} ${styles.feImgRight}`}>
-                                    <img src="/assets/fe-3.jpg" alt="Persona bahá'í" />
+                                    <img src="/assets/homeImages/fe-3.jpg" alt="Persona bahá'í" />
                                 </div>
                             </div>
                         </Col>
@@ -107,7 +107,7 @@ const HomePage = () => {
             <section className={styles.vidaSection}>
                 <div className={styles.vidaTop}>
                     <div className={styles.vidaTopImg} data-aos="fade-right" data-aos-duration="1000">
-                        <img src="/assets/vida-principal.png" alt="Niños bahá'ís con mapa del mundo" />
+                        <img src="/assets/homeImages/vida-principal.png" alt="Niños bahá'ís con mapa del mundo" />
                     </div>
                     <div className={styles.vidaTopText} data-aos="fade-left" data-aos-duration="1000">
                         <span className={styles.vidaLabel}>VIDA BAHÁ'Í</span>
@@ -134,7 +134,7 @@ const HomePage = () => {
                             data-aos="fade-up"
                             data-aos-delay={i * 100}
                         >
-                            <img src={`/assets/${img}`} alt="Comunidad bahá'í" />
+                            <img src={`/assets/homeImages/${img}`} alt="Comunidad bahá'í" />
                         </div>
                     ))}
                 </div>
@@ -172,11 +172,11 @@ const HomePage = () => {
                                 </div>
 
                                 <div className={`${styles.comunidadCard} ${styles.cardMain}`}>
-                                    <img src="/assets/comunidad-main.png" alt="Templo bahá'í" />
+                                    <img src="/assets/homeImages/comunidad-main.png" alt="Templo bahá'í" />
                                 </div>
                                 {[1,2,3,4,5,6].map(n => (
                                     <div key={n} className={`${styles.comunidadCard} ${styles[`avatar${n}`]}`}>
-                                        <img src={`/assets/avatar${n}.jpg`} alt="Miembro bahá'í" />
+                                        <img src={`/assets/homeImages/avatar${n}.jpg`} alt="Miembro bahá'í" />
                                     </div>
                                 ))}
 
@@ -214,7 +214,7 @@ const HomePage = () => {
                             data-aos-delay="200"
                         >
                             <img 
-                                src="/assets/mapa.png" 
+                                src="/assets/homeImages/mapa.png" 
                                 alt="Mapa de Bolivia" 
                                 style={{ maxWidth: '100%', height: 'auto' }} 
                             />
@@ -224,7 +224,7 @@ const HomePage = () => {
                 </Container>
 
                 <div className={styles.bAdornoWrapper}>
-                    <img src="/assets/b.png" alt="letra b" className={styles.bAdorno} />
+                    <img src="/assets/homeImages/b.png" alt="letra b" className={styles.bAdorno} />
                 </div>
             </section>
 

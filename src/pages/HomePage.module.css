@@ -2,7 +2,7 @@
 .heroSection {
   position: relative;
   min-height: 100vh;
-  background-image: url('/assets/heroSection6.png'); /* 👈 reemplaza con tu imagen */
+  background-image: url('/assets/homeImages/heroSection6.png'); /* 👈 reemplaza con tu imagen */
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -684,3 +684,4 @@
     opacity: 0.4;
     pointer-events: none;
 }
+

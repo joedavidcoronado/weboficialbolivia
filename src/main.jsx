@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/global.css';
 
 import HomePage from './pages/HomePage.jsx';
+import IdentityPage from './pages/IdentityPage.jsx';
 {/*import ActionsPage from './pages/ActionsPage.jsx';
 import BeliefsPage from './pages/BeliefsPage.jsx';
 import ConditionsPage from './pages/ConditionsPage.jsx';
 import ContactsPage from './pages/ContactsPage.jsx';
-import IdentityPage from './pages/IdentityPage.jsx';
 import PresentPage from './pages/PresentPage.jsx';*/}
 
 AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
@@ -22,11 +22,12 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/identidad" element={<IdentityPage />} />
         {/*<Route path="/acciones" element={<ActionsPage />} />
         <Route path="/creencias" element={<BeliefsPage />} />
         <Route path="/condiciones" element={<ConditionsPage />} />
         <Route path="/contacto" element={<ContactsPage />} />
-        <Route path="/identidad" element={<IdentityPage />} />
+        
         <Route path="/actualidad" element={<PresentPage />} />*/}
       </Routes>
     </BrowserRouter>
