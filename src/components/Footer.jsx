@@ -11,7 +11,7 @@ const Footer = () => {
                     <Col lg={4} md={12}>
                         <img src="/logo.png" alt="Logo CBB" className={styles.logoImg} />
                         <p className={styles.footerCopy}>
-                            Promoviendo la unidad de la humanidad y el desarrollo espiritual en cada rincón de Bolivia.
+                            El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable <br /> y correcta. - Bahá’u’lláh
                         </p>
                         <div className={styles.socialWrapper}>
                             <a href="#" className={styles.footerSocial} aria-label="Facebook">
@@ -43,10 +43,10 @@ const Footer = () => {
                     <Col lg={4} md={6}>
                         <h4 className={styles.footerHeading}>Explorar</h4>
                         <ul className={styles.footerLinks}>
-                            <li><a href="/identidad">Quienes somos</a></li>
-                            <li><a href="/creencias">Que creemos</a></li>
-                            <li><a href="/comunidad">Que hacemos</a></li>
-                            <li><a href="/recursos">Biblioteca de Recursos</a></li>
+                            <li><a href="/identidad">Quiénes somos</a></li>
+                            <li><a href="/creencias">Qué creemos</a></li>
+                            <li><a href="/comunidad">Qué hacemos</a></li>
+                            <li><a href="/recursos">Biblioteca de recursos</a></li>
                         </ul>
                     </Col>
                 </Row>

@@ -17,12 +17,12 @@ const HomePage = () => {
                     <Row>
                         <Col md={5} sm={8} xs={12}>
                             <h1 className={styles.heroTitle} data-aos="fade-right">
-                                La tierra es un 
-                                solo país
+                                Somos flores de un 
+                                solo jardín
                             </h1>
                             <p className={styles.heroText} data-aos="fade-right" data-aos-delay="150">
-                                Creemos que es hora de que la humanidad se una como una sola familia, 
-                                para crear un mundo donde todos puedan prosperar.
+                                Es hora que la humanidad se una como una sola familia, 
+                                para crear un mundo donde todos podamos prosperar.
                             </p>
                             <Button className={styles.heroBtn} data-aos="fade-up" data-aos-delay="300">
                                 BAHÁ'ÍS CERCA DE TÍ
@@ -44,16 +44,14 @@ const HomePage = () => {
                                 className={styles.quoteText}
                                 data-aos="fade-up"
                             >
-                                "…todo hombre ha sido creado para llevar adelante una civilización en continuo progreso"
+                                "…Todos hemos sido creados para llevar adelante una civilización en continuo progreso."
                             </blockquote>
                             <p 
                                 className={styles.quoteBody}
                                 data-aos="fade-up"
                                 data-aos-delay="150"
                             >
-                                Los bahá'ís de Bolivia y del resto del mundo, junto con otras personas de todos los 
-                                orígenes étnicos, culturales y sociales, estamos aprendiendo a aplicar las enseñanzas de 
-                                Bahá'u'lláh para contribuir al cambio social.
+                                Estamos aprendiendo, junto con amigos y vecinos de todos los orígenes étnicos, culturales y sociales, cómo aplicar las enseñanzas de Bahá'u'lláh para transformar nuestra sociedad.
                             </p>
                             <div className="text-center" data-aos="fade-up" data-aos-delay="300">
                                 <Button className={styles.quoteBtn}>
@@ -63,6 +61,41 @@ const HomePage = () => {
                         </Col>
                     </Row>
                 </Container>
+            </section>
+
+            {/* ─── QUIENES SOMOS LOS BAHÁI SECTION ─── */}
+            <section className={styles.vidaSection}>
+                <div className={styles.vidaTop}>
+                    <div className={styles.vidaTopImg} data-aos="fade-right" data-aos-duration="1000">
+                        <img src="/assets/homeImages/vida-principal.png" alt="Niños bahá'ís con mapa del mundo" />
+                    </div>
+                    <div className={styles.vidaTopText} data-aos="fade-left" data-aos-duration="1000">
+                        <span className={styles.vidaLabel}>BAHÁ'ÍS DE BOLIVIA</span>
+                        <h2 className={styles.vidaTitle}>
+                            Quiénes somos
+                        </h2>
+                        <p className={styles.vidaBody}>
+                            La Fe Bahá'í está presente en todas las regiones de Bolivia. Juntos, personas de distintas creencias, trabajamos para aplicar las enseñanzas de Bahá’u’lláh en nuestras vidas y comunidades.
+                        </p>
+                        <a href="/identidad" className={styles.vidaLink}>
+                            Explorar más <span className={styles.vidaLinkArrow}>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                {/* Galería inferior */}
+                <div className={styles.vidaGallery}>
+                    {['vida-g1.jpg','vida-g2.jpg','vida-g3.jpg','vida-g4.jpg'].map((img, i) => (
+                        <div 
+                            key={i}
+                            className={styles.vidaGalleryItem}
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
+                        >
+                            <img src={`/assets/homeImages/${img}`} alt="Comunidad bahá'í" />
+                        </div>
+                    ))}
+                </div>
             </section>
 
             {/* ─── EN QUE CREEMOS BAHÁI SECTION ─── */}
@@ -87,12 +120,10 @@ const HomePage = () => {
 
                         {/* Columna texto */}
                         <Col md={6} className={styles.feTextCol} data-aos="fade-left" data-aos-duration="900">
-                            <span className={styles.feLabel}>LA FE BAHÁ'Í</span>
-                            <h2 className={styles.feTitle}>En que creémos<br />los bahá'ís</h2>
+                            <span className={styles.feLabel}>UNIDAD DE LA HUMANIDAD</span>
+                            <h2 className={styles.feTitle}>Qué creémos</h2>
                             <p className={styles.feBody}>
-                                En miles y miles de lugares alrededor del mundo, las enseñanzas de 
-                                la Fe Bahá'í inspiran a individuos y comunidades mientras trabajan 
-                                para mejorar sus propias vidas y contribuir al avance de la civilización.
+                                El mensaje principal que trajo Bahá’u’lláh para el mundo es la unidad. Nos dice que somos los frutos de un solo árbol y las hojas de una sola rama, cada uno de nosotros es único y esa diversidad nos enriquece.
                             </p>
                             <a href="#" className={styles.feLink}>
                                 Explorar más <span className={styles.feLinkArrow}>→</span>
@@ -103,43 +134,6 @@ const HomePage = () => {
                 </Container>
             </section>
 
-            {/* ─── QUIENES SOMOS LOS BAHÁI SECTION ─── */}
-            <section className={styles.vidaSection}>
-                <div className={styles.vidaTop}>
-                    <div className={styles.vidaTopImg} data-aos="fade-right" data-aos-duration="1000">
-                        <img src="/assets/homeImages/vida-principal.png" alt="Niños bahá'ís con mapa del mundo" />
-                    </div>
-                    <div className={styles.vidaTopText} data-aos="fade-left" data-aos-duration="1000">
-                        <span className={styles.vidaLabel}>VIDA BAHÁ'Í</span>
-                        <h2 className={styles.vidaTitle}>
-                            Quiénes son los<br />bahá'ís de Bolivia
-                        </h2>
-                        <p className={styles.vidaBody}>
-                            La comunidad bahá'í de Bolivia cuenta con miembros de procedencias 
-                            culturales y étnicas diversas, tanto de dentro como de fuera de sus 
-                            fronteras; diversidad que se ve reflejada en su riqueza artística y lingüística.
-                        </p>
-                        <a href="#" className={styles.vidaLink}>
-                            Explorar más <span className={styles.vidaLinkArrow}>→</span>
-                        </a>
-                    </div>
-                </div>
-
-                {/* Galería inferior */}
-                <div className={styles.vidaGallery}>
-                    {['vida-g1.jpg','vida-g2.jpg','vida-g3.jpg','vida-g4.jpg'].map((img, i) => (
-                        <div 
-                            key={i}
-                            className={styles.vidaGalleryItem}
-                            data-aos="fade-up"
-                            data-aos-delay={i * 100}
-                        >
-                            <img src={`/assets/homeImages/${img}`} alt="Comunidad bahá'í" />
-                        </div>
-                    ))}
-                </div>
-            </section>
-
             {/* ─── QUE HACEMOS SECTION ─── */}
             <section className={styles.comunidadSection}>
                 <Container fluid className={styles.comunidadInner}>
@@ -147,14 +141,12 @@ const HomePage = () => {
 
                         {/* Columna texto */}
                         <Col md={5} className={styles.comunidadTextCol} data-aos="fade-right">
-                            <span className={styles.comunidadLabel}>VIDA COMUNITARIA</span>
+                            <span className={styles.comunidadLabel}>FE EN ACCIÓN</span>
                             <h2 className={styles.comunidadTitle}>
-                                Qué hacemos<br />los bahá'ís
+                                Qué hacemos
                             </h2>
                             <p className={styles.comunidadBody}>
-                                En colaboración con otras personas y organizaciones, nos esforzamos 
-                                por contribuir al avance de la sociedad inspirados por la vision de 
-                                Bahá'u'lláh de un mundo próspero, justo y unificado.
+                                Inspirados por las enseñanzas de Bahá'u'lláh, niños, jóvenes y adultos nos reunimos para reflexionar, aprender y servir. Trabajamos juntos y participamos en conversaciones que están transformando nuestros vecindarios y comunidades.
                             </p>
                             <Button className={styles.comunidadBtn}>
                                 ENCONTRAR ACTIVIDADES LOCALES
@@ -194,13 +186,10 @@ const HomePage = () => {
                         <Col md={6} xs={12} className={styles.mapaTextCol} data-aos="fade-right">
                             <span className={styles.mapaLabel}>ESTÁS INVITADO A PARTICIPAR</span>
                             <h2 className={styles.mapaTitle}>
-                                Una comunidad global construida sobre conexiones locales
+                                Una comunidad abierta a todos
                             </h2>
                             <p className={styles.mapaBody}>
-                                La mayoría de las actividades comunitarias bahá'ís (reuniones de 
-                                oración, grupos de estudio, actividades para niños y adolescentes) 
-                                están abiertas a todos y tienen lugar en hogares y centros 
-                                comunitarios en todo el país.
+                                Todas nuestras actividades — reuniones de oración, grupos de estudio y programas para niños y jóvenes — tienen un lugar para ti. Nos encontramos en hogares y centros comunitarios de todo el país, y cualquier persona es bienvenida, sin importar su origen o creencia.
                             </p>
                             <Button className={styles.mapaBtn}>
                                 ENCONTRAR ACTIVIDADES LOCALES
