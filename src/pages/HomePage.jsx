@@ -44,7 +44,7 @@ const HomePage = () => {
                                 className={styles.quoteText}
                                 data-aos="fade-up"
                             >
-                                "…Todos hemos sido creados para llevar adelante una civilización en continuo progreso."
+                                Todos hemos sido creados para llevar adelante una civilización en continuo progreso.
                             </blockquote>
                             <p 
                                 className={styles.quoteBody}
@@ -121,7 +121,7 @@ const HomePage = () => {
                         {/* Columna texto */}
                         <Col md={6} className={styles.feTextCol} data-aos="fade-left" data-aos-duration="900">
                             <span className={styles.feLabel}>UNIDAD DE LA HUMANIDAD</span>
-                            <h2 className={styles.feTitle}>Qué creémos</h2>
+                            <h2 className={styles.feTitle}>Qué creemos</h2>
                             <p className={styles.feBody}>
                                 El mensaje principal que trajo Bahá’u’lláh para el mundo es la unidad. Nos dice que somos los frutos de un solo árbol y las hojas de una sola rama, cada uno de nosotros es único y esa diversidad nos enriquece.
                             </p>
@@ -186,10 +186,10 @@ const HomePage = () => {
                         <Col md={6} xs={12} className={styles.mapaTextCol} data-aos="fade-right">
                             <span className={styles.mapaLabel}>ESTÁS INVITADO A PARTICIPAR</span>
                             <h2 className={styles.mapaTitle}>
-                                Una comunidad abierta a todos
+                                Una comunidad <br /> abierta a todos
                             </h2>
                             <p className={styles.mapaBody}>
-                                Todas nuestras actividades — reuniones de oración, grupos de estudio y programas para niños y jóvenes — tienen un lugar para ti. Nos encontramos en hogares y centros comunitarios de todo el país, y cualquier persona es bienvenida, sin importar su origen o creencia.
+                                Todas nuestras actividades —reuniones de oración, grupos de estudio y programas para niños, jóvenes y adultos— tienen un lugar para ti. Nos encontramos en hogares y centros comunitarios de todo el país, y cualquier persona es bienvenida, sin importar su origen o creencia.
                             </p>
                             <Button className={styles.mapaBtn}>
                                 ENCONTRAR ACTIVIDADES LOCALES
@@ -230,10 +230,11 @@ const HomePage = () => {
                                     className={styles.quote2Text}
                                     data-aos="fade-up"
                                 >
-                                    «Dedicad vuestra mente y voluntad a la educación de los pueblos y razas de la tierra, 
+                                    {/*«Dedicad vuestra mente y voluntad a la educación de los pueblos y razas de la tierra, 
                                     para que quizás sean borradas de su faz las disensiones que la dividen, por la fuerza 
                                     del Más Grande Nombre, y todos los seres humanos se conviertan en sostenedores de 
-                                    un Orden único y en habitantes de una sola Ciudad»
+                                    un Orden único y en habitantes de una sola Ciudad»*/}
+                                    "El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable y correcta."
                                 </blockquote>
 
                                 <cite 

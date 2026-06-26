@@ -21,13 +21,9 @@ const IdentityPage = () => {
 
                         <aside className={styles.citeCol} data-aos="fade-right" data-aos-delay="200">
                             <p className={styles.citeText}>
-                                "Vosotros debéis dar gran importancia a la enseñanza de los
-                                pueblos indígenas, es decir, a los aborígenes de América. [...]
-                                Si estos aborígenes fuesen educados y obtuvieseen guía, no hay
-                                duda de que llegarán a ser tan iluminados que a su vez podrán
-                                derramar luz sobre las regiones".
+                                "Tenéis que prestar gran importancia a los indígenas, los habitantes originarios de América, pues, [...] si estos indígenas reciben educación y guía, no puede haber duda alguna de que serán a tal punto iluminados que alumbrarán el mundo entero".
                             </p>
-                            <span className={styles.citeAuthor}>Abdu'l-Bahá</span>
+                            <span className={styles.citeAuthor}>ʻAbdu'l-Bahá</span>
                         </aside>
 
                         <div className={styles.contentCol} data-aos="fade-left">
@@ -92,11 +88,9 @@ const IdentityPage = () => {
 
                         <aside className={styles.citeCol} data-aos="fade-right" data-aos-delay="200">
                             <p className={styles.citeText}>
-                                "La diversidad en la familia humana debería ser causa de amor
-                                y armonía, como lo es en la música, donde muchas notas diferentes
-                                se mezclan en la creación de un acorde perfecto".
+                                "La Tierra es un solo país, y la humanidad sus ciudadanos".
                             </p>
-                            <span className={styles.citeAuthor}>Abdu'l-Bahá</span>
+                            <span className={styles.citeAuthor}>Bahá'u'lláh</span>
                         </aside>
 
                         <div className={styles.contentCol} data-aos="fade-left">
@@ -153,7 +147,7 @@ const IdentityPage = () => {
 
                             <p className={styles.bodyText}>
                                 En esta página oficial podemos conocer más sobre{' '}
-                                <a href="#" className={styles.bodyLink}>Bahá'u'lláh y Su Alianza</a>.
+                                <a href="https://www.bahai.org/es/beliefs/bahaullah-covenant" className={styles.bodyLink}>Bahá'u'lláh y Su Alianza</a>.
                             </p>
                         </div>
 
@@ -164,11 +158,9 @@ const IdentityPage = () => {
                 <div className={styles.creeemosCont}>
                     <div className={styles.creemosBanner} data-aos="fade-up">
                         <div className={styles.creemosBannerLeft}>
-                            <h2 className={styles.creemosTitle}>En qué creemos</h2>
+                            <h2 className={styles.creemosTitle}>Qué creemos</h2>
                             <p className={styles.creemosBody}>
-                                Desde el comienzo de la historia, algo hermoso ha estado ocurriendo en
-                                silencio: un solo Dios, lleno de amor, he estado enviando mensajeros a
-                                todos los pueblos de la tierra.
+                                El mensaje principal que trajo Bahá’u’lláh para el mundo es la unidad. Nos dice que somos los frutos de un solo árbol y las hojas de una sola rama, cada uno de nosotros es único y esa diversidad nos enriquece.
                             </p>
                             <a href="#" className={styles.creemosLink}>Descubre más →</a>
                         </div>

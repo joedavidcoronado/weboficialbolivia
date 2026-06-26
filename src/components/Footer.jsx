@@ -11,7 +11,7 @@ const Footer = () => {
                     <Col lg={4} md={12}>
                         <img src="/logo.png" alt="Logo CBB" className={styles.logoImg} />
                         <p className={styles.footerCopy}>
-                            El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable <br /> y correcta. - Bahá’u’lláh
+                            CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
                         </p>
                         <div className={styles.socialWrapper}>
                             <a href="#" className={styles.footerSocial} aria-label="Facebook">
