@@ -1,0 +1,84 @@
+/* ───── HERO SECTION ───── */
+.heroSection {
+  background-color: #eef7f4;
+  padding: 8rem 1rem 4rem;
+  text-align: center;
+}
+
+.heroLabel {
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--cbb-verde-principal);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.heroTitle {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #003E48;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.heroSubtitle {
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  color: #3a3a3a;
+  opacity: 0.75;
+}
+
+/* ───── CONTENT SECTION ───── */
+.contentSection {
+  background-color: #ffffff;
+  padding: 4.5rem 1rem 6rem;
+}
+
+.block {
+  margin-bottom: 2.5rem;
+}
+
+.blockTitle {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #003E48;
+  margin-bottom: 0.9rem;
+}
+
+.blockText {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin-bottom: 0.75rem;
+}
+
+.inlineLink {
+  color: var(--cbb-verde-principal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.inlineLink:hover {
+  text-decoration: underline;
+}
+
+/* ───── RESPONSIVE: MÓVIL ───── */
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .contentSection {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .block {
+    margin-bottom: 2rem;
+  }
+}

@@ -71,6 +71,9 @@ const Footer = () => {
                         <p className="mb-0">
                             © 2026 ASAMBLEA ESPIRITUAL NACIONAL DE LOS BAHÁ'ÍS DE BOLIVIA • CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
                         </p>
+                        <a href="/condiciones" className={styles.termsLink}>
+                            Términos y condiciones
+                        </a>
                     </Col>
                 </Row>
             </Container>
