@@ -2,12 +2,28 @@
 .heroSection {
   position: relative;
   min-height: 100vh;
-  background-image: url('/assets/homeImages/heroSection6.png'); /* 👈 reemplaza con tu imagen */
+  display: flex;
+  align-items: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.heroSection * {
+  -webkit-user-drag: none;
+}
+
+.heroImageProtected {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/homeImages/heroSection6.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  z-index: -1;
+}
+
+.heroImageProtected {
+  -webkit-touch-callout: none;
 }
 
 .heroOverlay {
@@ -640,11 +656,11 @@
 .bAdornoWrapper {
   position: absolute;
   left: 50%;
-  top: 575px;
-  transform: translate(-50%, 50%); /* El 50% en Y la baja justo a la mitad */
-  bottom: 0; /* Se alinea al borde inferior de mapaSection */
-  z-index: 10; /* Para que quede por encima de ambas secciones */
-  pointer-events: none; /* Opcional: para que no interfiera con clics */
+  top: 617px;
+  transform: translate(-50%, 50%);
+  bottom: 0; 
+  z-index: 10;
+  pointer-events: none;
 }
 
 .bAdorno {
@@ -694,11 +710,37 @@ html, body {
 
 /* ───── RESPONSIVE: MÓVIL ───── */
 @media (max-width: 767px) {
-  .heroSection{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 30%;
+  .heroTitle{
+    font-size: 3rem;
   }
+
+  .heroImageProtected {
+    background-position: 59% 30%;
+  }
+
+  .vidaGallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    height: 240px;
+  }
+
+  .vidaGallery::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .vidaGalleryItem {
+    flex: 0 0 70%;
+    scroll-snap-align: start;
+    height: 100%;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   .comunidadSection {
     padding: 3rem 1.2rem 0;
   }
@@ -715,8 +757,16 @@ html, body {
     margin-right: auto;
   }
 
+  .comunidadBtn{
+    margin-bottom: 15%;
+  }
+
   .comunidadVisualCol {
     margin-top: 1rem;
+  }
+
+  .feLabel{
+    margin-top: 15%;
   }
   
   .avatar1 { display: none; }
@@ -729,7 +779,9 @@ html, body {
     margin: 0;
   }
   .comunidadCard{
-    margin: -30% 0 0 0;
+    width: 80%;
+    height: 100%;
+    margin: -20% 0 0 0;
     padding: 0;
   }
 
@@ -743,10 +795,16 @@ html, body {
   }
 
   .bAdornoWrapper{
-    top: 860px;
+    top: 92%;
   }
 
   .vidaTopText{
     padding: 15px;
+  }
+}
+
+@media print {
+  .heroImageProtected {
+    display: none;
   }
 }

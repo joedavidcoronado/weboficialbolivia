@@ -1,12 +1,11 @@
 .navbarCustom {
-  /* Degradado: de verde sólido arriba a transparente abajo */
   background: linear-gradient(
     to bottom, 
     rgba(var(--cbb-verde-principal-rgb), 1) 0%, 
     rgba(var(--cbb-verde-principal-rgb), 0.8) 50%,
     transparent 100%
   );
-  backdrop-filter: blur(4px); /* Suaviza el fondo al hacer scroll */
+  backdrop-filter: blur(4px);
   padding: 1rem 0;
   border: none;
   transition: all 0.4s ease;
@@ -20,7 +19,7 @@
 
 .navLink {
   font-family: var(--font-primary);
-  color: #ffffff !important; /* Blanco para resaltar sobre el verde */
+  color: #ffffff !important; 
   font-weight: 500;
   margin: 0 15px;
   font-size: 1rem;
@@ -33,19 +32,17 @@
 .navLink:hover {
   opacity: 1;
   transform: translateY(-2px);
-  color: var(--cbb-verde-limon) !important; /* Cambio sutil al pasar el mouse */
+  color: var(--cbb-verde-limon) !important; 
 }
 
-/* Indicador de página activa (NavLink lo aplica automáticamente) */
 :global(.active).navLink {
   font-weight: 700;
   color: var(--cbb-verde-limon) !important;
 }
 
-/* Ajuste para el botón de menú en móviles */
 .toggleIcon {
   border: none;
-  filter: invert(1); /* Hace que el icono de hamburguesa sea blanco */
+  filter: invert(1); 
 }
 
 .toggleIcon:focus {
@@ -54,7 +51,19 @@
 
 @media (max-width: 991px) {
   .navbarCustom {
-    background: var(--cbb-verde-principal); /* Sólido en móvil para legibilidad */
-    padding: 0.5rem 1rem;
-  }
+  background: linear-gradient(
+    to bottom, 
+    rgba(var(--cbb-verde-principal-rgb), 1) 05%, 
+    rgba(var(--cbb-verde-principal-rgb), 1) 40%, 
+    rgba(var(--cbb-verde-principal-rgb), 0.8) 80%,
+    transparent 100%
+  );
+  backdrop-filter: blur(4px);
+  padding: 1rem 0;
+  border: none;
+  transition: all 0.4s ease;
+}
+  .logoImg {
+  height: 43px;
+}
 }

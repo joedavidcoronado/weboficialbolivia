@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from './HomePage.module.css';
 
 const HomePage = () => {
+
+    useEffect(() => {
+        const blockShortcuts = (e) => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && ['s', 'S', 'p', 'P', 'u', 'U'].includes(e.key)) ||
+                (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key))
+            ) {
+                e.preventDefault();
+            }
+        };
+        document.addEventListener('keydown', blockShortcuts);
+        return () => document.removeEventListener('keydown', blockShortcuts);
+    }, []);
+
     return (
         <>
         <main>
             {/* ─── HERO/MAIN SECTION ─── */}
-            <section className={styles.heroSection}>
+            <section 
+                className={styles.heroSection}
+                onContextMenu={(e) => e.preventDefault()}
+            >
+                <div className={styles.heroImageProtected} aria-hidden="true" />
                 <div className={styles.heroOverlay} />
                 <Container className={styles.heroContent}>
                     <Row>

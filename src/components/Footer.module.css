@@ -108,3 +108,51 @@
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.4);
 }
+
+/* ───── RESPONSIVE: MÓVIL ───── */
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .footerContent {
+    padding-bottom: 2rem;
+  }
+
+  .logoImg {
+    width: 120px;
+  }
+
+  .footerCopy {
+    font-size: 0.85rem;
+  }
+
+  .footerHeading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footerText {
+    font-size: 0.95rem;
+  }
+
+  .footerLinks {
+    margin-bottom: 0;
+  }
+
+  .footerLinks a:hover {
+    transform: none; /* el hover no aplica en touch, evita que quede un desplazamiento pegado al tocar */
+  }
+
+  .socialWrapper {
+    justify-content: center;
+  }
+
+  .copyrightSection p {
+    font-size: 0.72rem;
+    line-height: 1.5;
+    padding: 0 1rem;
+  }
+}

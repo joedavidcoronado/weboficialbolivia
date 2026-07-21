@@ -315,6 +315,11 @@
 
 /* ───── RESPONSIVE: MÓVIL ───── */
 @media (max-width: 767px) {
+
+  .contentCol{
+    margin-top: 15%;
+  }
+
   .comunidadSection {
     padding: 3rem 1rem;
   }
@@ -353,11 +358,9 @@
   .bAdornoWrapper {
     padding: 1.5rem 0 0;
   }
-  .bAdorno {
-    width: 80px;
-  }
+
   .quoteFinalSection {
-    padding: 2.5rem 1.5rem 4rem;
+    padding: 5.3rem 1.5rem 4rem;
   }  
   .creemosBanner {           
       display: flex;
