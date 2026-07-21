@@ -39,6 +39,14 @@
   margin-bottom: 1.2rem;
 }
 
+.spacedChar {
+  /* Separamos 3px la 'f' de la siguiente letra ('l') */
+  margin-right: 1px; 
+  
+  /* Opcional: También puedes usar letter-spacing si prefieres */
+  /* letter-spacing: 3px; */
+}
+
 .heroText {
   font-family: var(--font-primary);
   color: #ffffff;
@@ -541,12 +549,6 @@
 }
 
 
-
-
-
-
-
-
 /* ───── MAPA SECTION ───── */
 .mapaSection {
   background-color: #E7FAEE;
@@ -638,6 +640,7 @@
 .bAdornoWrapper {
   position: absolute;
   left: 50%;
+  top: 575px;
   transform: translate(-50%, 50%); /* El 50% en Y la baja justo a la mitad */
   bottom: 0; /* Se alinea al borde inferior de mapaSection */
   z-index: 10; /* Para que quede por encima de ambas secciones */
@@ -652,7 +655,7 @@
 
 .quote2Text {
     font-family: var(--font-secondary); /* O una fuente serif elegante similar */
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1.6;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -685,3 +688,65 @@
     pointer-events: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+/* ───── RESPONSIVE: MÓVIL ───── */
+@media (max-width: 767px) {
+  .heroSection{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 30%;
+  }
+  .comunidadSection {
+    padding: 3rem 1.2rem 0;
+  }
+
+  .comunidadTextCol {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .comunidadBody {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comunidadVisualCol {
+    margin-top: 1rem;
+  }
+  
+  .avatar1 { display: none; }
+  .avatar2 { display: none; }
+  .avatar3 { display: none; }
+  .avatar4 { display: none; }
+  .avatar5 { display: none; }
+  .avatar6 { display: none; }
+  .cardMain{
+    margin: 0;
+  }
+  .comunidadCard{
+    margin: -30% 0 0 0;
+    padding: 0;
+  }
+
+  .comunidadComposicion{
+    padding: 0;
+    height: 350px
+  }
+
+  .mapaBtn {
+    margin-bottom: 15%;
+  }
+
+  .bAdornoWrapper{
+    top: 860px;
+  }
+
+  .vidaTopText{
+    padding: 15px;
+  }
+}

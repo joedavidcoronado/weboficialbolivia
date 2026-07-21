@@ -1,0 +1,53 @@
+.floatBtn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #28DC8F;
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Asegura que esté por encima de todo */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: pulse 6s infinite;
+}
+
+.floatBtn:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1);
+}
+
+/* Animación sutil de ondas de pulsación */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.wsSize{
+    font-size: 1.6rem;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .floatBtn {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .floatBtn svg {
+    width: 24px;
+    height: 24px;
+  }
+}

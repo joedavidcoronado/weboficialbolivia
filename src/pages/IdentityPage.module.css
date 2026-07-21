@@ -144,7 +144,8 @@
     display: flex;         
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;        
+    padding: 4rem 0;    
+    margin-bottom: 50px;    
 }
 
 .creemosBanner {           
@@ -226,7 +227,7 @@
 
 .bAdornoWrapper {
   position: absolute;
-  top: 0;
+  top: 21px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -245,18 +246,20 @@
   align-items: center;
   gap: 1rem;
   padding-top: 2rem;
+  width: 100%;
 }
 
 .quoteFinalText {
   font-family: var(--font-secondary);
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.8rem, 2.5vw, 1.4rem);
   color: #ffffff;
   line-height: 1.6;
   font-style: normal;
   border: none;
   padding: 0;
   margin: 0;
-  max-width: 620px;
+  max-width: 920px;
+
 }
 
 .quoteFinalAuthor {
@@ -355,5 +358,19 @@
   }
   .quoteFinalSection {
     padding: 2.5rem 1.5rem 4rem;
+  }  
+  .creemosBanner {           
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .creemosBannerLeft{
+    width: 100%;
+  }
+  .creemosBannerRight{
+    width: 100%;
+  }
+  .bAdornoWrapper{
+    top: 0;
   }
 }

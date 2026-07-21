@@ -1,14 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import styles from './HomePage.module.css';
 
 const HomePage = () => {
     return (
         <>
-        <Header />
-        
         <main>
             {/* ─── HERO/MAIN SECTION ─── */}
             <section className={styles.heroSection}>
@@ -17,7 +13,7 @@ const HomePage = () => {
                     <Row>
                         <Col md={5} sm={8} xs={12}>
                             <h1 className={styles.heroTitle} data-aos="fade-right">
-                                Somos flores de un 
+                                Somos <span className={styles.spacedChar}>f</span>lores de un 
                                 solo jardín
                             </h1>
                             <p className={styles.heroText} data-aos="fade-right" data-aos-delay="150">
@@ -203,7 +199,7 @@ const HomePage = () => {
                             data-aos-delay="200"
                         >
                             <img 
-                                src="/assets/homeImages/mapa.png" 
+                                src="/assets/homeImages/mapa2.svg" 
                                 alt="Mapa de Bolivia" 
                                 style={{ maxWidth: '100%', height: 'auto' }} 
                             />
@@ -234,7 +230,7 @@ const HomePage = () => {
                                     para que quizás sean borradas de su faz las disensiones que la dividen, por la fuerza 
                                     del Más Grande Nombre, y todos los seres humanos se conviertan en sostenedores de 
                                     un Orden único y en habitantes de una sola Ciudad»*/}
-                                    "El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable y correcta."
+                                    El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable y correcta.
                                 </blockquote>
 
                                 <cite 
@@ -252,7 +248,7 @@ const HomePage = () => {
                 </Container>
             </section>
         </main>
-        <Footer />
+        
         </>
     );
 };

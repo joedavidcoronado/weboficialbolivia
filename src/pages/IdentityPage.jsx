@@ -7,7 +7,6 @@ import styles from './IdentityPage.module.css';
 const IdentityPage = () => {
     return (
         <>
-            <Header />
 
             {/* ─── HERO 1 ─── */}
             <div className={styles.heroContainer} data-aos="fade">
@@ -21,7 +20,7 @@ const IdentityPage = () => {
 
                         <aside className={styles.citeCol} data-aos="fade-right" data-aos-delay="200">
                             <p className={styles.citeText}>
-                                "Tenéis que prestar gran importancia a los indígenas, los habitantes originarios de América, pues, [...] si estos indígenas reciben educación y guía, no puede haber duda alguna de que serán a tal punto iluminados que alumbrarán el mundo entero".
+                                Tenéis que prestar gran importancia a los indígenas, los habitantes originarios de América, pues, [...] si estos indígenas reciben educación y guía, no puede haber duda alguna de que serán a tal punto iluminados que alumbrarán el mundo entero.
                             </p>
                             <span className={styles.citeAuthor}>ʻAbdu'l-Bahá</span>
                         </aside>
@@ -39,6 +38,14 @@ const IdentityPage = () => {
                                 de Bolivia".
                             </p>
 
+                            <img
+                                src="/assets/identidadImages/ivonne.jpg"
+                                alt="Primera Asamblea Espiritual Nacional de Bolivia"
+                                className={styles.historicImg}
+                                data-aos="zoom-in"
+                                data-aos-delay="200"
+                            />
+
                             <p className={styles.bodyText}>
                                 En 1945 ya se cuenta con un buen grupo de creyentes en La Paz,
                                 que elige a su primera institución, la Asamblea Espiritual Local,
@@ -54,7 +61,7 @@ const IdentityPage = () => {
                             </p>
 
                             <img
-                                src="/assets/identidadImages/asamblea.png"
+                                src="/assets/identidadImages/asamblea2.png"
                                 alt="Primera Asamblea Espiritual Nacional de Bolivia"
                                 className={styles.historicImg}
                                 data-aos="zoom-in"
@@ -88,7 +95,7 @@ const IdentityPage = () => {
 
                         <aside className={styles.citeCol} data-aos="fade-right" data-aos-delay="200">
                             <p className={styles.citeText}>
-                                "La Tierra es un solo país, y la humanidad sus ciudadanos".
+                                La Tierra es un solo país, y la humanidad sus ciudadanos.
                             </p>
                             <span className={styles.citeAuthor}>Bahá'u'lláh</span>
                         </aside>
@@ -180,7 +187,7 @@ const IdentityPage = () => {
 
                 <div className={styles.quoteFinalContent} data-aos="fade-up" data-aos-delay="150">
                     <blockquote className={styles.quoteFinalText}>
-                        «Tan potente es la luz de la unidad que puede iluminar toda la tierra.»
+                        Tan potente es la luz de la unidad que puede iluminar toda la tierra.
                     </blockquote>
                     <cite className={styles.quoteFinalAuthor}>Bahá'u'lláh</cite>
                     <Button className={styles.quoteFinalBtn} data-aos="fade-up" data-aos-delay="300">
@@ -188,8 +195,6 @@ const IdentityPage = () => {
                     </Button>
                 </div>
             </section>
-
-            <Footer />
         </>
     );
 };

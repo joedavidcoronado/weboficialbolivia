@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 77vh; /* Se adapta bien tanto dentro de un layout como a pantalla completa */
+  padding: 20px 20px 0px;
+  background-color: transparent; /* Permite que herede el fondo de tu app */
+  text-align: center;
+}
+
+.content {
+  max-width: 480px;
+  width: 100%;
+}
+
+.imgPlaceHolder{
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a; /* Cambia a blanco si usas modo oscuro */
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.link {
+  color: #25d366; /* O el color principal de tu marca */
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+@keyframes dotPulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+  .container {
+    min-height: 50vh;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
