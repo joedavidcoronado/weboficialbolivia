@@ -77,8 +77,6 @@ const HomePage = () => {
 
             {/* ─── QUOTE/CITA SECTION ─── */}
             <section className={styles.quoteSection}>
-                <img src="/assets/homeImages/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florTopRight}`} aria-hidden="true" />
-                <img src="/assets/homeImages/flor-deco.png" alt="" className={`${styles.florDeco} ${styles.florBottomLeft}`} aria-hidden="true" />
 
                 <Container>
                     <Row className="justify-content-center">
