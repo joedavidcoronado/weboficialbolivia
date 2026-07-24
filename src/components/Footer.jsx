@@ -39,7 +39,7 @@ const Footer = () => {
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             >
-                                <FontAwesomeIcon icon={faCircleInfo} size="lg" /> Web Oficial Bahai
+                                <FontAwesomeIcon icon={faCircleInfo} size="lg" /> Web Oficial Bahá’í
                             </a>
                             {/* Puedes agregar más iconos aquí */}
                         </div>
