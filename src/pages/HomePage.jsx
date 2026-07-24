@@ -11,6 +11,10 @@ const HomePage = () => {
         return isFirstLoad ? longDelay : shortDelay;
     };
 
+    const handleGoWhatasApp = () => {
+        window.open("https://wa.me/59163227009", "_blank", "noopener,noreferrer");
+    };
+
     useEffect(() => {
         const blockShortcuts = (e) => {
             if (
@@ -58,6 +62,7 @@ const HomePage = () => {
                             </p>
                             
                             <Button 
+                                onClick={handleGoWhatasApp}
                                 className={styles.heroBtn} 
                                 data-aos="fade-up" 
                                 // 0.3s en cargas normales, 4.2s con Splash
@@ -92,7 +97,7 @@ const HomePage = () => {
                                 Estamos aprendiendo, junto con amigos y vecinos de todos los orígenes étnicos, culturales y sociales, cómo aplicar las enseñanzas de Bahá’u’lláh para transformar nuestra sociedad.
                             </p>
                             <div className="text-center" data-aos="fade-up" data-aos-delay="300">
-                                <Button className={styles.quoteBtn}>
+                                <Button className={styles.quoteBtn} onClick={handleGoWhatasApp}>
                                     ÚNETE EN TU LOCALIDAD
                                 </Button>
                             </div>
@@ -229,7 +234,7 @@ const HomePage = () => {
                             <p className={styles.mapaBody}>
                                 Todas nuestras actividades —reuniones de oración, grupos de estudio y programas para niños, jóvenes y adultos— tienen un lugar para ti. Nos encontramos en hogares y centros comunitarios de todo el país, y cualquier persona es bienvenida, sin importar su origen o creencia.
                             </p>
-                            <Button className={styles.mapaBtn}>
+                            <Button className={styles.mapaBtn} onClick={handleGoWhatasApp}>
                                 ENCONTRAR ACTIVIDADES LOCALES
                             </Button>
                         </Col>

@@ -5,6 +5,11 @@ import Footer from '../components/Footer';
 import styles from './IdentityPage.module.css';
 
 const IdentityPage = () => {
+
+    const handleGoWhatasApp = () => {
+        window.open("https://wa.me/59163227009", "_blank", "noopener,noreferrer");
+    };
+
     return (
         <>
 
@@ -183,7 +188,7 @@ const IdentityPage = () => {
                         Tan potente es la luz de la unidad que puede iluminar toda la tierra.
                     </blockquote>
                     <cite className={styles.quoteFinalAuthor}>Bahá’u’lláh</cite>
-                    <Button className={styles.quoteFinalBtn} data-aos="fade-up" data-aos-delay="300">
+                    <Button className={styles.quoteFinalBtn} data-aos="fade-up" data-aos-delay="300" onClick={handleGoWhatasApp}>
                         BAHÁ’ÍS CERCA DE TÍ
                     </Button>
                 </div>
