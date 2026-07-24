@@ -1,0 +1,49 @@
+/* src/pages/NotFoundPage.module.css */
+
+.notFoundContainer {
+  height: 100vh;
+}
+
+.errorCode {
+  /* Personaliza el tamaño, color o animación del 404 */
+  font-family: var(--font-primary);
+  color: #333;
+}
+
+.errorTitle {
+  /* Personaliza el título de la página */
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.errorText {
+  /* Personaliza el párrafo descriptivo */
+  font-family: var(--font-primary);
+  color: #6c757d;
+}
+
+.homeButton {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.homeButton:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.homeButton:active {
+  transform: translateY(1px);
+}

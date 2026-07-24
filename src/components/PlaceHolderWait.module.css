@@ -45,15 +45,20 @@
 }
 
 .button {
-  background-color: #1a1a1a;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #003E48 !important;
+  background-color: #28DC8F !important;
+  border: none !important;
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 0.75rem 2rem;
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .button:hover {

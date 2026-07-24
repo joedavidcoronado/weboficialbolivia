@@ -5,6 +5,8 @@ import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+
 const Footer = () => {
     return (
         <footer className={styles.footer}>
@@ -17,7 +19,7 @@ const Footer = () => {
                             CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
                         </p>
                         <div className={styles.socialWrapper}>
-                            <a href="#" className={styles.footerSocial} aria-label="Facebook">
+                            <a href="https://www.facebook.com/Bahaibolivia" className={styles.footerSocial} aria-label="Facebook">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                                 </svg>
@@ -30,6 +32,14 @@ const Footer = () => {
                                 rel="noopener noreferrer"
                             >
                                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+                            </a>
+                            <a 
+                                href="https://bahai.org" 
+                                className={styles.footerSocial2}
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={faCircleInfo} size="lg" /> Web Oficial Bahai
                             </a>
                             {/* Puedes agregar más iconos aquí */}
                         </div>
@@ -55,9 +65,10 @@ const Footer = () => {
                     <Col lg={4} md={6}>
                         <h4 className={styles.footerHeading}>Explorar</h4>
                         <ul className={styles.footerLinks}>
+                            <li><a href="/">Inicio</a></li>
                             <li><a href="/identidad">Quiénes somos</a></li>
                             <li><a href="/creencias">Qué creemos</a></li>
-                            <li><a href="/comunidad">Qué hacemos</a></li>
+                            <li><a href="/acciones">Qué hacemos</a></li>
                             <li><a href="/recursos">Biblioteca de recursos</a></li>
                         </ul>
                     </Col>
@@ -69,7 +80,7 @@ const Footer = () => {
                 <Row>
                     <Col>
                         <p className="mb-0">
-                            © 2026 ASAMBLEA ESPIRITUAL NACIONAL DE LOS BAHÁ'ÍS DE BOLIVIA • CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
+                            © 2026 ASAMBLEA ESPIRITUAL NACIONAL DE LOS BAHÁ’ÍS DE BOLIVIA • CONSTRUYENDO JUNTOS UNA SOCIEDAD UNIDA
                         </p>
                         <a href="/condiciones" className={styles.termsLink}>
                             Términos y condiciones

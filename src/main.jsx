@@ -19,6 +19,7 @@ import PresentPage from './pages/PresentPage.jsx';
 import ConditionsPage from './pages/ConditionsPage.jsx';
 import ResourcesPage from './pages/ResourcesPage.jsx';
 import SplashScreen from './components/SplashScreen.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
 
@@ -32,26 +33,32 @@ function App() {
     setShowSplash(false);
   };
 
-  if (showSplash) {
-    return <SplashScreen onFinish={handleSplashFinish} />;
-  }
-
+  // 1. Quitamos el "if (showSplash)" de aquí.
+  // 2. Renderizamos el SplashScreen sobre el BrowserRouter.
   return (
-    <BrowserRouter>
-      <Header />
-      <FloatingWhatsapp />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/identidad" element={<IdentityPage />} />
-        <Route path="/creencias" element={<BeliefsPage />} />
-        <Route path="/condiciones" element={<ConditionsPage />} />
-        <Route path="/acciones" element={<ActionsPage />} />
-        <Route path="/contacto" element={<ContactsPage />} />
-        <Route path="/actualidad" element={<PresentPage />} />
-        <Route path="/recursos" element={<ResourcesPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      {/* Si showSplash es true, renderiza la pantalla de carga por encima de todo */}
+      {showSplash && <SplashScreen onFinish={handleSplashFinish} />}
+
+      {/* Tu aplicación real siempre se renderiza por debajo */}
+      <BrowserRouter>
+        <Header />
+        <FloatingWhatsapp />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/identidad" element={<IdentityPage />} />
+          <Route path="/creencias" element={<BeliefsPage />} />
+          <Route path="/condiciones" element={<ConditionsPage />} />
+          <Route path="/acciones" element={<ActionsPage />} />
+          <Route path="/contacto" element={<ContactsPage />} />
+          <Route path="/actualidad" element={<PresentPage />} />
+          <Route path="/recursos" element={<ResourcesPage />} />
+          {/* Ruta comodín para atrapar errores 404 */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

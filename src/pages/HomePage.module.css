@@ -8,6 +8,7 @@
   -webkit-user-drag: none;
 }
 
+
 .heroSection * {
   -webkit-user-drag: none;
 }
@@ -35,7 +36,15 @@
     rgba(0, 139, 118, 0.55) 45%,
     rgba(0, 139, 118, 0.05) 70%,
     transparent 100%
-  );
+  ),
+  linear-gradient(
+      290deg,
+      rgba(255, 255, 255, 0.941) 4%,
+      rgba(255, 255, 255, 0.568) 8%,
+      rgba(255, 255, 255, 0.342) 17%,
+      rgba(255, 255, 255, 0.149) 29%,
+      transparent 37%
+    );
   z-index: 0;
 }
 
@@ -67,7 +76,8 @@
   font-family: var(--font-primary);
   color: #ffffff;
   margin-bottom: 2rem;
-  max-width: 380px;
+  max-width: 440px;
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
   font-weight: 40;
 }
 
@@ -286,7 +296,6 @@
 .vidaSection {
   width: 100%;
   background-color: #142F29;
-  
 }
 
 /* === Fila superior === */
@@ -294,6 +303,7 @@
   display: flex;
   flex-direction: row;
   min-height: 420px;
+  
 }
 
 .vidaTopImg {
@@ -339,6 +349,7 @@
 }
 
 .vidaBody {
+  font-family: var(--font-primary);
   font-size: clamp(1rem, 1.6vw, 1.05rem);
   color: #ffffff;
   line-height: 1.75;
@@ -435,7 +446,15 @@
 
 /* ───── VIDA COMUNITARIA SECTION ───── */
 .comunidadSection {
-  background-color: #a8dfca;
+  background: 
+    linear-gradient(
+      224deg,
+      rgba(255, 255, 255, 0.941) 0%,
+      rgba(255, 255, 255, 0.568) 30%,
+      rgba(255, 255, 255, 0.342) 55%,
+      rgba(255, 255, 255, 0.149) 75%
+    ), 
+    #a8dfca;
   padding: 5rem 6.8rem;
   overflow: hidden;
 }
@@ -517,7 +536,7 @@
   position: absolute;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: -10px 18px 24px rgba(0, 0, 0, 0.285);
 }
 
 .comunidadCard img {
@@ -537,12 +556,12 @@
 }
 
 /* Avatares — posicionados manualmente */
-.avatar1 { width: 90px; height: 90px; top: 0px;   left: 120px; }
-.avatar2 { width: 90px; height: 90px; top: 60px;  left: 10px;  }
-.avatar3 { width: 90px; height: 90px; top: 30px;  right: 10px; }
-.avatar4 { width: 90px; height: 90px; bottom: 60px; right: 0px; }
-.avatar5 { width: 90px; height: 90px; bottom: 30px; left: 100px;}
-.avatar6 { width: 90px; height: 90px; bottom: 0px;  left: 230px;}
+.avatar1 { width: 90px; height: 90px; top: 0px;   left: 120px;  }
+.avatar2 { width: 90px; height: 90px; top: 60px;  left: 10px; }
+.avatar3 { width: 120px; height: 120px; top: 30px;  right: 10px;}
+.avatar4 { width: 100px; height: 100px; bottom: 60px; right: 0px;}
+.avatar5 { width: 110px; height: 110px; bottom: 30px; left: 100px;  z-index: 10;}
+.avatar6 { width: 90px; height: 90px; bottom: 0px;  left: 230px; z-index: 9;}
 
 /* Patrón de puntos */
 .dotGrid {
@@ -640,12 +659,11 @@
 }
 
 .quoteSection2 {
-    /* Degradado similar al de la imagen */
     background: linear-gradient(135deg, #008f7a 0%, #00a896 50%, #83c5be 100%);
     padding: 100px 0;
     color: white;
     position: relative;
-    overflow: hidden;
+    
 }
 
 .quoteWrapper {
@@ -655,11 +673,10 @@
 
 .bAdornoWrapper {
   position: absolute;
+  top: 21px;
   left: 50%;
-  top: 617px;
-  transform: translate(-50%, 50%);
-  bottom: 0; 
-  z-index: 10;
+  transform: translate(-50%, -50%);
+  z-index: 90;
   pointer-events: none;
 }
 
@@ -671,7 +688,7 @@
 
 .quote2Text {
     font-family: var(--font-secondary); /* O una fuente serif elegante similar */
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.6;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -708,10 +725,30 @@ html, body {
   overflow-x: hidden;
 }
 
+
+
 /* ───── RESPONSIVE: MÓVIL ───── */
 @media (max-width: 767px) {
+  .heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 139, 118, 0.82) 0%,
+      rgba(0, 139, 118, 0.55) 45%,
+      rgba(0, 139, 118, 0.05) 70%,
+      transparent 100%
+    );
+    z-index: 0;
+  }
+
   .heroTitle{
-    font-size: 3rem;
+    font-size: 2.8rem;
+    max-width: 320px;
+  }
+
+  .heroText{
+    max-width: 300px;
   }
 
   .heroImageProtected {
@@ -768,6 +805,10 @@ html, body {
   .feLabel{
     margin-top: 15%;
   }
+
+  .feLinkCel{
+    margin-bottom: 13%;
+  }
   
   .avatar1 { display: none; }
   .avatar2 { display: none; }
@@ -794,12 +835,15 @@ html, body {
     margin-bottom: 15%;
   }
 
-  .bAdornoWrapper{
-    top: 92%;
+  .bAdornoWrapper {
+    padding: 2.7rem 0 0;
   }
 
   .vidaTopText{
     padding: 15px;
+  }
+  .bAdornoWrapper{
+    top: 0;
   }
 }
 

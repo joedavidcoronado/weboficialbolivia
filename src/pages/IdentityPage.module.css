@@ -26,7 +26,7 @@
 
 .comunidadInner {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 15rem 1fr;
   gap: 3rem;
   max-width: 960px;
   margin: 0 auto;
@@ -38,16 +38,17 @@
 
 .citeText {
   font-family: var(--font-secondary);
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--cbb-verde-llano);
+  font-weight: lighter;
   line-height: 1.7;
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 0.75rem;
 }
 
 .citeAuthor {
   font-family: var(--font-primary);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--cbb-verde-llano);
@@ -83,6 +84,18 @@
   line-height: 1.8;
   margin-bottom: 1.25rem;
   max-width: 570px;
+}
+
+.bodyTextRef{
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: #2d2d2d;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  margin-top: -25px;
+  max-width: 570px;
+  text-align: center;
+  font-style: italic;
 }
 
 .historicImg {
@@ -151,9 +164,9 @@
 .creemosBanner {           
     display: flex;
     flex-direction: row;
-    width: 60%;              
+    width: 60%;           
     max-width: 1100px;      
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 10px 14px 20px rgba(0, 0, 0, 0.303);
 }
 
 .creemosBannerLeft {
@@ -169,8 +182,8 @@
 .creemosTitle {
     font-family: var(--font-primary);
     font-size: clamp(2rem, 3.5vw, 3rem); 
-    font-weight: 400;      
-    color: #ffffff;    
+    font-weight: 500;      
+    color: #1a3a30;    
     line-height: 1.2;
     margin-bottom: 2rem;
 }
@@ -187,7 +200,7 @@
 
 .creemosLink {
     font-family: var(--font-primary);
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #ffffff;     
     text-decoration: underline;
@@ -195,6 +208,7 @@
     align-items: center;
     gap: 0.3rem;
     transition: opacity 0.2s ease;
+    text-decoration: none;
 }
 
 .creemosLink:hover {
@@ -251,7 +265,7 @@
 
 .quoteFinalText {
   font-family: var(--font-secondary);
-  font-size: clamp(1.8rem, 2.5vw, 1.4rem);
+  font-size: 2rem;
   color: #ffffff;
   line-height: 1.6;
   font-style: normal;
@@ -264,8 +278,8 @@
 
 .quoteFinalAuthor {
   font-family: var(--font-primary);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: normal;
   letter-spacing: 0.2em;
   color: #ffffff;
   text-transform: uppercase;
@@ -282,7 +296,7 @@
   color: #003E48 !important;
   background-color: #28DC8F !important;
   border: none !important;
-  border-radius: 24px;
+  border-radius: 8px;
   padding: 0.75rem 2rem;
   position: relative;
   overflow: hidden;
@@ -326,6 +340,11 @@
   .feMundialSection {
     padding-top: 3rem;
   }
+
+  .comunidadInner{
+    margin: 0 auto;
+  }
+
   .comunidadInner,
   .feMundialInner {
     grid-template-columns: 1fr;
@@ -375,5 +394,6 @@
   }
   .bAdornoWrapper{
     top: 0;
+    padding: 2.7rem 0 0;
   }
 }

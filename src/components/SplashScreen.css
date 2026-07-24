@@ -9,6 +9,13 @@
   overflow: hidden;
   font-family: sans-serif;
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.splash.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Evita que el usuario haga clic accidentalmente mientras desaparece */
 }
 
 /* El contenedor del logo ahora escala todo un 20% hacia el centro */

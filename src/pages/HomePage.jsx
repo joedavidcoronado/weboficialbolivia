@@ -1,8 +1,15 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from './HomePage.module.css';
+import { useRef } from 'react';
 
 const HomePage = () => {
+
+    const isFirstLoad = useRef(!sessionStorage.getItem('splashShown')).current;
+
+    const getDelay = (shortDelay, longDelay) => {
+        return isFirstLoad ? longDelay : shortDelay;
+    };
 
     useEffect(() => {
         const blockShortcuts = (e) => {
@@ -31,16 +38,32 @@ const HomePage = () => {
                 <Container className={styles.heroContent}>
                     <Row>
                         <Col md={5} sm={8} xs={12}>
-                            <h1 className={styles.heroTitle} data-aos="fade-right">
-                                Somos <span className={styles.spacedChar}>f</span>lores de un 
-                                solo jardín
+                            <h1 
+                                className={styles.heroTitle} 
+                                data-aos="fade-right" 
+                                // Sin retraso en cargas normales, 3.9s con Splash
+                                style={{ transitionDelay: getDelay('0s', '4.15s') }}
+                            >
+                                Somos <span className={styles.spacedChar}>f</span>lores de un solo jardín
                             </h1>
-                            <p className={styles.heroText} data-aos="fade-right" data-aos-delay="150">
+                            
+                            <p 
+                                className={styles.heroText} 
+                                data-aos="fade-right" 
+                                // 0.15s en cargas normales, 4.05s con Splash
+                                style={{ transitionDelay: getDelay('0.15s', '4.30s') }}
+                            >
                                 Es hora que la humanidad se una como una sola familia, 
                                 para crear un mundo donde todos podamos prosperar.
                             </p>
-                            <Button className={styles.heroBtn} data-aos="fade-up" data-aos-delay="300">
-                                BAHÁ'ÍS CERCA DE TÍ
+                            
+                            <Button 
+                                className={styles.heroBtn} 
+                                data-aos="fade-up" 
+                                // 0.3s en cargas normales, 4.2s con Splash
+                                style={{ transitionDelay: getDelay('0.3s', '4.45s') }}
+                            >
+                                BAHÁ’ÍS CERCA DE TÍ
                             </Button>
                         </Col>
                     </Row>
@@ -66,7 +89,7 @@ const HomePage = () => {
                                 data-aos="fade-up"
                                 data-aos-delay="150"
                             >
-                                Estamos aprendiendo, junto con amigos y vecinos de todos los orígenes étnicos, culturales y sociales, cómo aplicar las enseñanzas de Bahá'u'lláh para transformar nuestra sociedad.
+                                Estamos aprendiendo, junto con amigos y vecinos de todos los orígenes étnicos, culturales y sociales, cómo aplicar las enseñanzas de Bahá’u’lláh para transformar nuestra sociedad.
                             </p>
                             <div className="text-center" data-aos="fade-up" data-aos-delay="300">
                                 <Button className={styles.quoteBtn}>
@@ -85,12 +108,12 @@ const HomePage = () => {
                         <img src="/assets/homeImages/vida-principal.png" alt="Niños bahá'ís con mapa del mundo" />
                     </div>
                     <div className={styles.vidaTopText} data-aos="fade-left" data-aos-duration="1000">
-                        <span className={styles.vidaLabel}>BAHÁ'ÍS DE BOLIVIA</span>
+                        <span className={styles.vidaLabel}>BAHÁ’ÍS DE BOLIVIA</span>
                         <h2 className={styles.vidaTitle}>
                             Quiénes somos
                         </h2>
                         <p className={styles.vidaBody}>
-                            La Fe Bahá'í está presente en todas las regiones de Bolivia. Juntos, personas de distintas creencias, trabajamos para aplicar las enseñanzas de Bahá’u’lláh en nuestras vidas y comunidades.
+                            La Fe Bahá’í está presente en todas las regiones de Bolivia. Juntos, personas de distintas creencias, trabajamos para aplicar las enseñanzas de Bahá’u’lláh en nuestras vidas y comunidades.
                         </p>
                         <a href="/identidad" className={styles.vidaLink}>
                             Explorar más <span className={styles.vidaLinkArrow}>→</span>
@@ -140,7 +163,7 @@ const HomePage = () => {
                             <p className={styles.feBody}>
                                 El mensaje principal que trajo Bahá’u’lláh para el mundo es la unidad. Nos dice que somos los frutos de un solo árbol y las hojas de una sola rama, cada uno de nosotros es único y esa diversidad nos enriquece.
                             </p>
-                            <a href="#" className={styles.feLink}>
+                            <a href="/creencias" className={styles.feLink}>
                                 Explorar más <span className={styles.feLinkArrow}>→</span>
                             </a>
                         </Col>
@@ -161,11 +184,11 @@ const HomePage = () => {
                                 Qué hacemos
                             </h2>
                             <p className={styles.comunidadBody}>
-                                Inspirados por las enseñanzas de Bahá'u'lláh, niños, jóvenes y adultos nos reunimos para reflexionar, aprender y servir. Trabajamos juntos y participamos en conversaciones que están transformando nuestros vecindarios y comunidades.
+                                Inspirados por las enseñanzas de Bahá’u’lláh, niños, jóvenes y adultos nos reunimos para reflexionar, aprender y servir. Trabajamos juntos y participamos en conversaciones que están transformando nuestros vecindarios y comunidades.
                             </p>
-                            <Button className={styles.comunidadBtn}>
-                                ENCONTRAR ACTIVIDADES LOCALES
-                            </Button>
+                            <a href="/acciones" className={`${styles.feLink} ${styles.feLinkCel}`}>
+                                Explorar más <span className={styles.feLinkArrow}>→</span>
+                            </a>
                         </Col>
 
                         {/* Columna visual */}
@@ -226,17 +249,16 @@ const HomePage = () => {
 
                     </Row>
                 </Container>
-
-                <div className={styles.bAdornoWrapper}>
-                    <img src="/assets/homeImages/b.png" alt="letra b" className={styles.bAdorno} />
-                </div>
             </section>
 
             {/* ─── QUOTE/CITA 2 SECTION ─── */}
             <section className={styles.quoteSection2}>
+                <div className={styles.bAdornoWrapper}>
+                    <img src="/assets/homeImages/b.png" alt="letra b" className={styles.bAdorno} />
+                </div>
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md={10} lg={8} className="text-center">
+                        <Col md={8} lg={9} className="text-center">
                             <div className={styles.quoteWrapper}>
 
                                 <div className={styles.quoteDecorationTop} />
@@ -245,10 +267,6 @@ const HomePage = () => {
                                     className={styles.quote2Text}
                                     data-aos="fade-up"
                                 >
-                                    {/*«Dedicad vuestra mente y voluntad a la educación de los pueblos y razas de la tierra, 
-                                    para que quizás sean borradas de su faz las disensiones que la dividen, por la fuerza 
-                                    del Más Grande Nombre, y todos los seres humanos se conviertan en sostenedores de 
-                                    un Orden único y en habitantes de una sola Ciudad»*/}
                                     El mejoramiento del mundo puede ser logrado por medio de hechos puros y hermosos, por medio de una conducta loable y correcta.
                                 </blockquote>
 
@@ -257,7 +275,7 @@ const HomePage = () => {
                                     data-aos="fade-up"
                                     data-aos-delay="200"
                                 >
-                                    BAHÁ'U'LLÁH
+                                    BAHÁ’U’LLÁH
                                 </cite>
 
                                 <div className={styles.quoteDecorationSide} />

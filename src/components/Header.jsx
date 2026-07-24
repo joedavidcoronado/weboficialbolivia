@@ -44,6 +44,9 @@ const Header = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
+                        <Nav.Link as={NavLink} to="/" className={styles.navLink} onClick={() => setExpanded(false)}>
+                            Inicio
+                        </Nav.Link>
                         <Nav.Link as={NavLink} to="/identidad" className={styles.navLink} onClick={() => setExpanded(false)}>
                             Quiénes somos
                         </Nav.Link>

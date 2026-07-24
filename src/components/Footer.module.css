@@ -91,6 +91,26 @@
   transition: all 0.3s ease;
 }
 
+.footerSocial2{
+  text-decoration: none;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  width: 190px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footerSocial2:hover {
+  background: var(--cbb-verde-llano);
+  color: white;
+  transform: scale(1.1);
+}
+
 .footerSocial:hover {
   background: var(--cbb-verde-llano);
   color: white;
