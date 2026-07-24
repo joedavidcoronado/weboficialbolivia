@@ -125,7 +125,7 @@ const IdentityPage = () => {
 
                             <div className={styles.videoWrapper} data-aos="zoom-in" data-aos-delay="100">
                                 <iframe
-                                    src="https://youtu.be/luNPE1V8TW0?si=WIX9CN7KJyL1F1zC"
+                                    src="https://www.youtube.com/embed/luNPE1V8TW0"
                                     title="Luz para el Mundo"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
