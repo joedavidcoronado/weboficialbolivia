@@ -7,13 +7,14 @@
 .errorCode {
   /* Personaliza el tamaño, color o animación del 404 */
   font-family: var(--font-primary);
-  color: #333;
+  color: #003E48;
 }
 
 .errorTitle {
   /* Personaliza el título de la página */
   font-family: var(--font-primary);
   font-weight: 600;
+  color: #003E48;
 }
 
 .errorText {

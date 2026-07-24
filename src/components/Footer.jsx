@@ -34,7 +34,7 @@ const Footer = () => {
                                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
                             </a>
                             <a 
-                                href="https://bahai.org" 
+                                href="https://bahai.org/es" 
                                 className={styles.footerSocial2}
                                 target="_blank" 
                                 rel="noopener noreferrer"
