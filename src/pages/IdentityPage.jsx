@@ -117,7 +117,7 @@ const IdentityPage = () => {
                             </p>
 
                             <p className={styles.bodyText}>
-                                La película <a href="https://www.youtube.com/watch?v=luNPE1V8TW0" className={styles.bodyLink}>Luz para el Mundo</a> celebra
+                                La película <a href="https://www.bahai.org/es/video/light-to-the-world" className={styles.bodyLink}>Luz para el Mundo</a> celebra
                                 el bicentenario del nacimiento de Bahá’u’lláh y nos permite conocer un poco
                                 sobre el impacto que han tenido Sus enseñanzas y cómo están ayudando a
                                 transformar la sociedad en lugares muy diversos del mundo.
