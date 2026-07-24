@@ -21,6 +21,8 @@ import ResourcesPage from './pages/ResourcesPage.jsx';
 import SplashScreen from './components/SplashScreen.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
+import ScrollToTop from './components/ScrollToTop.jsx';
+
 AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
 
       {/* Tu aplicación real siempre se renderiza por debajo */}
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <FloatingWhatsapp />
         <Routes>

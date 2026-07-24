@@ -66,11 +66,11 @@ const IdentityPage = () => {
                                 data-aos-delay="200"
                             />
                             <p className={styles.bodyTextRef}>
-                                Asamblea Espiritual Nacional de los Baháʼís de Bolivia.
+                                Asamblea Espiritual Nacional de los Bahá’ís de Bolivia.
                                 Sentado (el segundo hombre de izquierda a derecha, sosteniendo el cuadro) el señor Andrés Jachacollo
                             </p>
                             <p className={styles.bodyText}>
-                                La Fe Baháʼí es actualmente la minoría religiosa internacional más grande en Bolivia, y está distribuida 
+                                La Fe Bahá’í es actualmente la minoría religiosa internacional más grande en Bolivia, y está distribuida 
                                 en todos los departamentos y regiones del país, tanto en el campo como en las ciudades, donde los bahá’ís, 
                                 junto con amigos de todo tipo de creencias y orígenes, se esfuerzan por aplicar en sus vidas, en sus familias 
                                 y en sus comunidades los principios y enseñanzas que trajo Bahá’u’lláh para la transformación de la sociedad.
