@@ -25,7 +25,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <a 
-                                href="https://wa.me/+59163227009" 
+                                href="https://wa.me/59163227009" 
                                 className={styles.footerSocial} 
                                 aria-label="WhatsApp" 
                                 target="_blank" 
