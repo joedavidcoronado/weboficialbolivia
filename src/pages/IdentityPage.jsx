@@ -66,7 +66,8 @@ const IdentityPage = () => {
                                 data-aos-delay="200"
                             />
                             <p className={styles.bodyTextRef}>
-                                Asamblea Espiritual Nacional de los Baháʼís de Bolivia
+                                Asamblea Espiritual Nacional de los Baháʼís de Bolivia.
+                                Sentado (el segundo hombre de izquierda a derecha, sosteniendo el cuadro) el señor Andrés Jachacollo
                             </p>
                             <p className={styles.bodyText}>
                                 La Fe Baháʼí es actualmente la minoría religiosa internacional más grande en Bolivia, y está distribuida 
